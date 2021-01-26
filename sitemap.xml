@@ -2,16 +2,23 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://gougeblog.com/2021/01/20/hello-world/</loc>
+    <loc>http://gougeblog.com/2021/01/22/my-new-post/</loc>
     
-    <lastmod>2021-01-22</lastmod>
+    <lastmod>2021-01-26</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://gougeblog.com/tages/index.html</loc>
+    
+    <lastmod>2021-01-25</lastmod>
     
   </url>
   
   <url>
     <loc>http://gougeblog.com/categories/index.html</loc>
     
-    <lastmod>2021-01-22</lastmod>
+    <lastmod>2021-01-23</lastmod>
     
   </url>
   
@@ -22,36 +29,29 @@
     
   </url>
   
-  <url>
-    <loc>http://gougeblog.com/2021/01/22/%E7%94%9F%E6%B4%BB%E6%9C%89%E7%82%B9%E8%B5%B6/</loc>
-    
-    <lastmod>2021-01-21</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://gougeblog.com/2021/01/22/my-new-post/</loc>
-    
-    <lastmod>2021-01-21</lastmod>
-    
-  </url>
-  
 
   <url>
     <loc>http://gougeblog.com/</loc>
-    <lastmod>2021-01-22</lastmod>
+    <lastmod>2021-01-26</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
 
   
   <url>
-    <loc>http://gougeblog.com/tags/%E6%96%87%E5%AD%97/</loc>
-    <lastmod>2021-01-22</lastmod>
+    <loc>http://gougeblog.com/tags/%E6%84%9F%E6%83%B3/</loc>
+    <lastmod>2021-01-26</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
 
+  
+  <url>
+    <loc>http://gougeblog.com/categories/%E5%8D%9A%E5%AE%A2/</loc>
+    <lastmod>2021-01-26</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
   
 </urlset>

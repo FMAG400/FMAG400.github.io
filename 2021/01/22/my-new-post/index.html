@@ -17,18 +17,18 @@
 
 <script id="hexo-configurations">
     var NexT = window.NexT || {};
-    var CONFIG = {"hostname":"gougeblog.com","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
+    var CONFIG = {"hostname":"gougeblog.com","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":true,"show_result":true,"style":"mac"},"back2top":{"enable":true,"sidebar":false,"scrollpercent":true},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
   </script>
 
   <meta property="og:type" content="article">
-<meta property="og:title" content="my new post">
+<meta property="og:title" content="搭建博客">
 <meta property="og:url" content="http://gougeblog.com/2021/01/22/my-new-post/index.html">
-<meta property="og:site_name" content="做自己不会快乐">
+<meta property="og:site_name" content="六马狗窝">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2021-01-21T16:22:36.000Z">
-<meta property="article:modified_time" content="2021-01-21T13:23:05.380Z">
-<meta property="article:author" content="Gou Ge">
-<meta property="article:tag" content="文字">
+<meta property="article:modified_time" content="2021-01-26T11:31:03.935Z">
+<meta property="article:author" content="GouGe">
+<meta property="article:tag" content="感想">
 <meta name="twitter:card" content="summary">
 
 <link rel="canonical" href="http://gougeblog.com/2021/01/22/my-new-post/">
@@ -44,8 +44,10 @@
   };
 </script>
 
-  <title>my new post | 做自己不会快乐</title>
+  <title>搭建博客 | 六马狗窝</title>
   
+
+
 
 
 
@@ -75,7 +77,9 @@
   </style>
 </noscript>
 
-<link rel="alternate" href="/atom.xml" title="做自己不会快乐" type="application/atom+xml">
+
+<style>.github-emoji { position: relative; display: inline-block; width: 1.2em; min-height: 1.2em; overflow: hidden; vertical-align: top; color: transparent; }  .github-emoji > span { position: relative; z-index: 10; }  .github-emoji img, .github-emoji .fancybox { margin: 0 !important; padding: 0 !important; border: none !important; outline: none !important; text-decoration: none !important; user-select: none !important; cursor: auto !important; }  .github-emoji img { height: 1.2em !important; width: 1.2em !important; position: absolute !important; left: 50% !important; top: 50% !important; transform: translate(-50%, -50%) !important; user-select: none !important; cursor: auto !important; } .github-emoji-fallback { color: inherit; } .github-emoji-fallback img { opacity: 0 !important; }</style>
+<link rel="alternate" href="/atom.xml" title="六马狗窝" type="application/atom+xml">
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage">
@@ -106,16 +110,13 @@
 
     <a href="/" class="brand" rel="start">
       <span class="logo-line-before"><i></i></span>
-      <h1 class="site-title">做自己不会快乐</h1>
+      <h1 class="site-title">六马狗窝</h1>
       <span class="logo-line-after"><i></i></span>
     </a>
+      <p class="site-subtitle" itemprop="description">GrownUp</p>
   </div>
 
-  <div class="site-nav-right">
-    <div class="toggle popup-trigger">
-        <i class="fa fa-search fa-fw fa-lg"></i>
-    </div>
-  </div>
+  
 </div>
 
 
@@ -184,6 +185,7 @@
     <i class="fa fa-arrow-up"></i>
     <span>0%</span>
   </div>
+  <div class="reading-progress-bar"></div>
 
 
     <main class="main">
@@ -202,16 +204,16 @@
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/head_img.gif">
-      <meta itemprop="name" content="Gou Ge">
-      <meta itemprop="description" content="">
+      <meta itemprop="name" content="GouGe">
+      <meta itemprop="description" content="A man's got to have a code">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="做自己不会快乐">
+      <meta itemprop="name" content="六马狗窝">
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          my new post
+          搭建博客
         </h1>
 
         <div class="post-meta">
@@ -228,10 +230,39 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2021-01-21 21:23:05" itemprop="dateModified" datetime="2021-01-21T21:23:05+08:00">2021-01-21</time>
+                <time title="修改时间：2021-01-26 19:31:03" itemprop="dateModified" datetime="2021-01-26T19:31:03+08:00">2021-01-26</time>
               </span>
-
-          
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E5%8D%9A%E5%AE%A2/" itemprop="url" rel="index"><span itemprop="name">博客</span></a>
+                </span>
+            </span>
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">评论数：</span>
+    
+    <a title="valine" href="/2021/01/22/my-new-post/#valine-comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/2021/01/22/my-new-post/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  <br>
+            <span class="post-meta-item" title="本文字数">
+              <span class="post-meta-item-icon">
+                <i class="far fa-file-word"></i>
+              </span>
+                <span class="post-meta-item-text">本文字数：</span>
+              <span>2.3k</span>
+            </span>
+            <div class="post-description"><搭建博客的一点感想></div>
 
         </div>
       </header>
@@ -242,7 +273,76 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        
+        <h3 id="gt-gt-为什么要搭Blog？"><a href="#gt-gt-为什么要搭Blog？" class="headerlink" title=">> 为什么要搭Blog？"></a>&gt;&gt; 为什么要搭Blog？</h3><hr>
+<p>其实这个想法一直都有, 只是总有别的事或者懒。现在为了更好的对自己学过的东西进行总结, 因此建了个博客把一些学习笔记详细并系统的记录下来, 这样也方便了自己学习和回顾。趁现在放假花了点时间把Blog搭起来了, 使用了框架Hexo+主题Next-Gemini, 先放到了Github的仓库然后为了个性化而绑定一个自己喜欢的域名。</p>
+<h3 id="gt-gt-背景知识"><a href="#gt-gt-背景知识" class="headerlink" title=">> 背景知识"></a>&gt;&gt; 背景知识</h3><hr>
+<p>使用开源项目Hexo搭建了个人博客, 主题是Next &amp; Gemini。</p>
+<ol>
+<li><p>Hexo下载初始化后包含的文件:</p>
+<ul>
+<li><p>_config.yml : 总体配置文件, 又被称为”站级配置文件”, 作用于整个blog站点</p>
+</li>
+<li><p>source : md源文件目录, 该文件夹存放了一些子目录文件夹, 例如_posts, about, categories等</p>
+<ul>
+<li>_posts : 存放blog文章, 文章基本都是由markdown语法来编写</li>
+<li>categories : 存放分类, 例如文章的种类</li>
+</ul>
+</li>
+<li><p>themes : 存放blog的主题, 例如本文使用的next</p>
+<ul>
+<li>默认主题是landscape</li>
+<li>next 该主题包含以下文件:<ul>
+<li>_config.yml : 主题配置文件</li>
+<li>layout 构造html的模版</li>
+<li>source 静态资源目录, css &amp; js</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>public : 存放html, css, js等文件</p>
+</li>
+<li><p>scaffolds : 存放了一些模版, 例如新建blog文章</p>
+</li>
+<li><p>node_modules : NodeJs 所依赖的包, 后期可添加插件</p>
+</li>
+<li><p>package-look.json : 支持NodeJs的包</p>
+<p>Hexo最基本的功能是把markdown程序先翻译成JSON格式(JavaScript Object Notation)然后再生成html文件</p>
+</li>
+</ul>
+</li>
+<li><p>Hexo一些常用的命令</p>
+<ul>
+<li><p>hexo new page “ “ - 定义新文章 </p>
+</li>
+<li><p>hexo clean  - 清除缓存文件(db.json) 和 已生成的静态文件(public)</p>
+</li>
+<li><p>hexo generate - 预先生成静态文件, 例如html</p>
+</li>
+<li><p>hexo server - 在本地启动服务器, 将生成的html网页部署到本地服务器</p>
+</li>
+<li><p>hexo deploy - 部署网站, 将生成的html网页代码推送到github</p>
+<p>常用的缩写 “hexo clean &amp; hexo g &amp; hexo s” 适用于调试网页时在本地(localhost:4000)查看网页效果, 而 “hexo clean &amp;&amp; hexo g &amp;&amp; hexo d” 是部署到所有人都可以访问的网站上(本文购买了Namecheap的域名). 其实不购买域名也可以, 放到github上也能够被所有人访问到, 但是访问地址后缀是.github.io, 所以为了特别点还是要花点钱</p>
+</li>
+</ul>
+</li>
+</ol>
+<p>通过学习他人的文章或者视频, 搭建博客以及绑定域名等都不是问题. 同时, 配置一些基础的功能,例如统计文章字数, 记录文章浏览人数, 网站建站时常等, 这些都不需要什么编程的基础就能够很快实现, 同时有任何问题都可以通过关键字搜到解决办法.<br>但是为了更好的了解hexo这个开源项目, 我们还是需要深入学习html和css和js, 这样无论是更改css样式还是调整网页的布局都更高效.  </p>
+<h3 id="gt-gt-碰到的问题"><a href="#gt-gt-碰到的问题" class="headerlink" title=">> 碰到的问题"></a>&gt;&gt; 碰到的问题</h3><hr>
+<p>值得一提的是, 在调试blog的时候突然出现了一个错误:</p>
+<figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">// Custom layer</span><br><span class="line">   // ----------------------------------------------</span><br><span class="line">   for $inject_style in hexo-config('injects.style')</span><br><span class="line">       @import $inject_style;</span><br></pre></td></tr></tbody></table></figure>
+<p>然后整个网页变成没有样式的布局. 这个问题可以这样解决, 通过(<a target="_blank" rel="noopener" href="https://blog.csdn.net/qq_52116176/article/details/109406842">https://blog.csdn.net/qq_52116176/article/details/109406842</a>): </p>
+<ol>
+<li>先在 “themes/next/source/css” 里面创建一个 “_custom” 文件夹, 然后在该文件夹里面创建”style.styl”, 并且添加以下代码:<figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">body { </span><br><span class="line">    background: url(/images/greek-vase.png);</span><br><span class="line">    background-repeat: repeat;// 设定背景图片重复填充</span><br><span class="line">    background-attachment: fixed;// 设置背景图片不随页面滚动</span><br><span class="line">    background-position: ; // 设置背景图片位置为默认值</span><br><span class="line">    background-size: cover // 此时会保持图像的纵横比并将图像缩放成将完全覆盖背景定位区域的最小大小。</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure></li>
+<li>然后修改在 “themes/source/css/main.styl” 路径下的 “main.styl” 就能够更换blog的背景了, 并且网页也恢复了正常显示. <figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">// Custom Layer</span><br><span class="line">// --------------------------------------------------</span><br><span class="line">for $inject_style in hexo-config('injects.style')</span><br><span class="line">    // @import $inject_style;</span><br><span class="line">    @import "_custom/style.styl";</span><br></pre></td></tr></tbody></table></figure>
+
+
+</li>
+</ol>
+<h3 id="gt-gt-个人建议"><a href="#gt-gt-个人建议" class="headerlink" title=">>个人建议"></a>&gt;&gt;个人建议</h3><hr>
+<ul>
+<li>Blog搭建很快, 毕竟不太需要什么基础, 而样式的设计&amp;布局则需要花时间去学习 ‘HTML, CSS, JS’。</li>
+</ul>
+
     </div>
 
     
@@ -251,29 +351,46 @@
 
     <div>
       
-        
+        <div>
+    
+        <div style="text-align:center;color: #ccc;font-size:14px;">-------------本文结束<i class="fa fa-paw"></i>感谢您的阅读-------------</div>
+    
+</div>
       
     </div>
 
+    <div>
+      
+        
+       
+    </div>
+        
+
+<div>
+<ul class="post-copyright">
+  <li class="post-copyright-author">
+    <strong>本文作者： </strong>GouGe
+  </li>
+  <li class="post-copyright-link">
+    <strong>本文链接：</strong>
+    <a href="http://gougeblog.com/2021/01/22/my-new-post/" title="搭建博客">http://gougeblog.com/2021/01/22/my-new-post/</a>
+  </li>
+  <li class="post-copyright-license">
+    <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="noopener" target="_blank"><i class="fab fa-fw fa-creative-commons"></i>BY-NC-SA</a> 许可协议。转载请注明出处！
+  </li>
+</ul>
+</div>
+
+
       <footer class="post-footer">
           <div class="post-tags">
-              <a href="/tags/%E6%96%87%E5%AD%97/" rel="tag"><i class="fa fa-tag"></i> 文字</a>
+              <a href="/tags/%E6%84%9F%E6%83%B3/" rel="tag"><i class="fa fa-tag"></i> 感想</a>
           </div>
 
         
 
 
         
-    <div class="post-nav">
-      <div class="post-nav-item">
-    <a href="/2021/01/20/hello-world/" rel="prev" title="Hello World">
-      <i class="fa fa-chevron-left"></i> Hello World
-    </a></div>
-      <div class="post-nav-item">
-    <a href="/2021/01/22/%E7%94%9F%E6%B4%BB%E6%9C%89%E7%82%B9%E8%B5%B6/" rel="next" title="生活有点赶">
-      生活有点赶 <i class="fa fa-chevron-right"></i>
-    </a></div>
-    </div>
       </footer>
     
   </article>
@@ -285,6 +402,7 @@
 
           </div>
           
+    <div class="comments" id="valine-comments"></div>
 
 <script>
   window.addEventListener('tabs:register', () => {
@@ -331,24 +449,31 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#gt-gt-%E4%B8%BA%E4%BB%80%E4%B9%88%E8%A6%81%E6%90%ADBlog%EF%BC%9F"><span class="nav-number">1.</span> <span class="nav-text">&gt;&gt; 为什么要搭Blog？</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#gt-gt-%E8%83%8C%E6%99%AF%E7%9F%A5%E8%AF%86"><span class="nav-number">2.</span> <span class="nav-text">&gt;&gt; 背景知识</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#gt-gt-%E7%A2%B0%E5%88%B0%E7%9A%84%E9%97%AE%E9%A2%98"><span class="nav-number">3.</span> <span class="nav-text">&gt;&gt; 碰到的问题</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#gt-gt-%E4%B8%AA%E4%BA%BA%E5%BB%BA%E8%AE%AE"><span class="nav-number">4.</span> <span class="nav-text">&gt;&gt;个人建议</span></a></li></ol></div>
       </div>
       <!--/noindex-->
 
       <div class="site-overview-wrap sidebar-panel">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
-    <img class="site-author-image" itemprop="image" alt="Gou Ge"
+    <img class="site-author-image" itemprop="image" alt="GouGe"
       src="/images/head_img.gif">
-  <p class="site-author-name" itemprop="name">Gou Ge</p>
-  <div class="site-description" itemprop="description"></div>
+  <p class="site-author-name" itemprop="name">GouGe</p>
+  <div class="site-description" itemprop="description">A man's got to have a code</div>
 </div>
 <div class="site-state-wrap motion-element">
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">3</span>
+          <span class="site-state-item-count">1</span>
           <span class="site-state-item-name">日志</span>
         </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+            <a href="/categories/">
+          
+        <span class="site-state-item-count">1</span>
+        <span class="site-state-item-name">分类</span></a>
       </div>
       <div class="site-state-item site-state-tags">
         <span class="site-state-item-count">1</span>
@@ -356,19 +481,14 @@
       </div>
   </nav>
 </div>
-  <div class="links-of-author motion-element">
-      <span class="links-of-author-item">
-        <a href="https://weibo.com/yourname" title="Weibo → https:&#x2F;&#x2F;weibo.com&#x2F;yourname" rel="noopener" target="_blank"><i class="fab fa-weibo fa-fw"></i>Weibo</a>
-      </span>
-      <span class="links-of-author-item">
-        <a href="https://blog.csdn.net/wsmrzx" title="CSDN → https:&#x2F;&#x2F;blog.csdn.net&#x2F;wsmrzx" rel="noopener" target="_blank"><i class="fab fa-CSDN fa-fw"></i>CSDN</a>
-      </span>
-  </div>
 
 
 
       </div>
 
+      <!-- tagcloud -->
+      
+      
     </div>
   </aside>
   <div id="sidebar-dimmer"></div>
@@ -382,31 +502,37 @@
         
 
         
-
-<script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+  <div class="powered-by">Powered by <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Gemini</a>
+  </div>
 
 <div class="copyright">
   
   &copy; 
   <span itemprop="copyrightYear">2021</span>
-  <span class="with-love">
-    <i class="fa fa-heart"></i>
+  <span class="with-dog">
+    <i class="fa fa-dog"></i>
   </span>
-  <span class="author" itemprop="copyrightHolder">Gou Ge</span>
+  <span class="author" itemprop="copyrightHolder">GouGe</span>
 </div>
-  <div class="powered-by">
-    <i class="fa fa-user-md"></i>
-    <span id="busuanzi_container_site_uv">
-      本站访客数:<span id="busuanzi_value_site_uv"></span>
-    </span>
-  </div>
-  <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Gemini</a> 强力驱动
-  </div>
-
-<div class="theme-info">
-  <div class="powered-by"></div>
-  <span class="post-count">博客全站共75字</span>
-</div>
+<!-- 网站运行时间的设置 -->
+<span id="timeDate">载入天数...</span>
+<span id="times">载入时分秒...</span>
+<script>
+    var now = new Date();
+    function createtime() {
+        var grt= new Date("01/20/2021 12:20:20"); //此处修改你的建站时间或者网站上线时间
+        now.setTime(now.getTime()+250);
+        days = (now - grt ) / 1000 / 60 / 60 / 24; dnum = Math.floor(days);
+        hours = (now - grt ) / 1000 / 60 / 60 - (24 * dnum); hnum = Math.floor(hours);
+        if(String(hnum).length ==1 ){hnum = "0" + hnum;} minutes = (now - grt ) / 1000 /60 - (24 * 60 * dnum) - (60 * hnum);
+        mnum = Math.floor(minutes); if(String(mnum).length ==1 ){mnum = "0" + mnum;}
+        seconds = (now - grt ) / 1000 - (24 * 60 * 60 * dnum) - (60 * 60 * hnum) - (60 * mnum);
+        snum = Math.round(seconds); if(String(snum).length ==1 ){snum = "0" + snum;}
+        document.getElementById("timeDate").innerHTML = "站点存在 "+ dnum + " 天 ";
+        document.getElementById("times").innerHTML = hnum + " 小时 " + mnum + " 分 " + snum + " 秒";
+    }
+setInterval("createtime()",250);
+</script>
 
         
 
@@ -422,6 +548,8 @@
   </div>
 
   
+  
+  <script color='64,52,11' opacity='1' zIndex='-1' count='150' src="/lib/canvas-nest/canvas-nest.min.js"></script>
   <script src="/lib/anime.min.js"></script>
   <script src="/lib/velocity/velocity.min.js"></script>
   <script src="/lib/velocity/velocity.ui.min.js"></script>
@@ -464,11 +592,38 @@
   
 
 
+<script>
+NexT.utils.loadComments(document.querySelector('#valine-comments'), () => {
+  NexT.utils.getScript('//unpkg.com/valine/dist/Valine.min.js', () => {
+    var GUEST = ['nick', 'mail'];
+    var guest = 'nick,mail';
+    guest = guest.split(',').filter(item => {
+      return GUEST.includes(item);
+    });
+    new Valine({
+      el         : '#valine-comments',
+      verify     : false,
+      notify     : false,
+      appId      : '95mh5wGfIhf4y3yjWgdRxDlu-gzGzoHsz',
+      appKey     : 'XSqxNImUUaw9z5SW2Yfiwyne',
+      placeholder: "...",
+      avatar     : 'mp',
+      meta       : guest,
+      pageSize   : '30' || 30,
+      visitor    : true,
+      lang       : '' || 'zh-cn',
+      path       : location.pathname,
+      recordIP   : false,
+      serverURLs : ''
+    });
+  }, window.Valine);
+});
+</script>
+
+
   
     <script type="text/javascript" src="//cdn.bootcss.com/canvas-nest.js/1.0.0/canvas-nest.min.js"></script>
   
-
-
-
-<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","model":{"jsonPath":"live2d-widget-model-wanko"},"display":{"position":"right","width":150,"height":300},"mobile":{"show":true},"log":false,"tagMode":false});</script></body>
+  
+</body>
 </html>

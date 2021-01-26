@@ -1,66 +1,39 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>做自己不会快乐</title>
+  <title>六马狗窝</title>
   
-  
+  <subtitle>GrownUp</subtitle>
   <link href="http://gougeblog.com/atom.xml" rel="self"/>
   
   <link href="http://gougeblog.com/"/>
-  <updated>2021-01-21T13:45:46.832Z</updated>
+  <updated>2021-01-26T11:31:03.935Z</updated>
   <id>http://gougeblog.com/</id>
   
   <author>
-    <name>Gou Ge</name>
+    <name>GouGe</name>
     
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>生活有点赶</title>
-    <link href="http://gougeblog.com/2021/01/22/%E7%94%9F%E6%B4%BB%E6%9C%89%E7%82%B9%E8%B5%B6/"/>
-    <id>http://gougeblog.com/2021/01/22/%E7%94%9F%E6%B4%BB%E6%9C%89%E7%82%B9%E8%B5%B6/</id>
-    <published>2021-01-21T16:45:46.000Z</published>
-    <updated>2021-01-21T13:45:46.832Z</updated>
-    
-    
-    
-    
-    
-  </entry>
-  
-  <entry>
-    <title>my new post</title>
+    <title>搭建博客</title>
     <link href="http://gougeblog.com/2021/01/22/my-new-post/"/>
     <id>http://gougeblog.com/2021/01/22/my-new-post/</id>
     <published>2021-01-21T16:22:36.000Z</published>
-    <updated>2021-01-21T13:23:05.380Z</updated>
+    <updated>2021-01-26T11:31:03.935Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="gt-gt-为什么要搭Blog？"><a href="#gt-gt-为什么要搭Blog？" class="headerlink" title=">> 为什么要搭Blog？"></a>&gt;&gt; 为什么要搭Blog？</h3><hr><p>其实这个想法一直都有, 只是总有别的事或者懒。现在为了更好的对自己学过的东西进行总结, 因此建了个博客把一些学习笔记详细并系统的记录下来, 这样也方便了自己学习和回顾。趁现在放假花了点时间把Blog搭起来了, 使用了框架Hexo+主题Next-Gemini, 先放到了Github的仓库然后为了个性化而绑定一个自己喜欢的域名。</p><h3 id="gt-gt-背景知识"><a href="#gt-gt-背景知识" class="headerlink" title=">> 背景知识"></a>&gt;&gt; 背景知识</h3><hr><p>使用开源项目Hexo搭建了个人博客, 主题是Next &amp; Gemini。</p><ol><li><p>Hexo下载初始化后包含的文件:</p><ul><li><p>_config.yml : 总体配置文件, 又被称为”站级配置文件”, 作用于整个blog站点</p></li><li><p>source : md源文件目录, 该文件夹存放了一些子目录文件夹, 例如_posts, about, categories等</p><ul><li>_posts : 存放blog文章, 文章基本都是由markdown语法来编写</li><li>categories : 存放分类, 例如文章的种类</li></ul></li><li><p>themes : 存放blog的主题, 例如本文使用的next</p><ul><li>默认主题是landscape</li><li>next 该主题包含以下文件:<ul><li>_config.yml : 主题配置文件</li><li>layout 构造html的模版</li><li>source 静态资源目录, css &amp; js</li></ul></li></ul></li><li><p>public : 存放html, css, js等文件</p></li><li><p>scaffolds : 存放了一些模版, 例如新建blog文章</p></li><li><p>node_modules : NodeJs 所依赖的包, 后期可添加插件</p></li><li><p>package-look.json : 支持NodeJs的包</p><p>Hexo最基本的功能是把markdown程序先翻译成JSON格式(JavaScript Object Notation)然后再生成html文件</p></li></ul></li><li><p>Hexo一些常用的命令</p><ul><li><p>hexo new page “ “ - 定义新文章 </p></li><li><p>hexo clean  - 清除缓存文件(db.json) 和 已生成的静态文件(public)</p></li><li><p>hexo generate - 预先生成静态文件, 例如html</p></li><li><p>hexo server - 在本地启动服务器, 将生成的html网页部署到本地服务器</p></li><li><p>hexo deploy - 部署网站, 将生成的html网页代码推送到github</p><p>常用的缩写 “hexo clean &amp; hexo g &amp; hexo s” 适用于调试网页时在本地(localhost:4000)查看网页效果, 而 “hexo clean &amp;&amp; hexo g &amp;&amp; hexo d” 是部署到所有人都可以访问的网站上(本文购买了Namecheap的域名). 其实不购买域名也可以, 放到github上也能够被所有人访问到, 但是访问地址后缀是.github.io, 所以为了特别点还是要花点钱</p></li></ul></li></ol><p>通过学习他人的文章或者视频, 搭建博客以及绑定域名等都不是问题. 同时, 配置一些基础的功能,例如统计文章字数, 记录文章浏览人数, 网站建站时常等, 这些都不需要什么编程的基础就能够很快实现, 同时有任何问题都可以通过关键字搜到解决办法.<br>但是为了更好的了解hexo这个开源项目, 我们还是需要深入学习html和css和js, 这样无论是更改css样式还是调整网页的布局都更高效.  </p><h3 id="gt-gt-碰到的问题"><a href="#gt-gt-碰到的问题" class="headerlink" title=">> 碰到的问题"></a>&gt;&gt; 碰到的问题</h3><hr><p>值得一提的是, 在调试blog的时候突然出现了一个错误:</p><figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">// Custom layer</span><br><span class="line">   // ----------------------------------------------</span><br><span class="line">   for $inject_style in hexo-config('injects.style')</span><br><span class="line">       @import $inject_style;</span><br></pre></td></tr></tbody></table></figure><p>然后整个网页变成没有样式的布局. 这个问题可以这样解决, 通过(<a href="https://blog.csdn.net/qq_52116176/article/details/109406842">https://blog.csdn.net/qq_52116176/article/details/109406842</a>): </p><ol><li>先在 “themes/next/source/css” 里面创建一个 “_custom” 文件夹, 然后在该文件夹里面创建”style.styl”, 并且添加以下代码:<figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">body { </span><br><span class="line">    background: url(/images/greek-vase.png);</span><br><span class="line">    background-repeat: repeat;// 设定背景图片重复填充</span><br><span class="line">    background-attachment: fixed;// 设置背景图片不随页面滚动</span><br><span class="line">    background-position: ; // 设置背景图片位置为默认值</span><br><span class="line">    background-size: cover // 此时会保持图像的纵横比并将图像缩放成将完全覆盖背景定位区域的最小大小。</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure></li><li>然后修改在 “themes/source/css/main.styl” 路径下的 “main.styl” 就能够更换blog的背景了, 并且网页也恢复了正常显示. <figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">// Custom Layer</span><br><span class="line">// --------------------------------------------------</span><br><span class="line">for $inject_style in hexo-config('injects.style')</span><br><span class="line">    // @import $inject_style;</span><br><span class="line">    @import "_custom/style.styl";</span><br></pre></td></tr></tbody></table></figure></li></ol><h3 id="gt-gt-个人建议"><a href="#gt-gt-个人建议" class="headerlink" title=">>个人建议"></a>&gt;&gt;个人建议</h3><hr><ul><li>Blog搭建很快, 毕竟不太需要什么基础, 而样式的设计&amp;布局则需要花时间去学习 ‘HTML, CSS, JS’。</li></ul>]]></content>
+    
+    
+    <summary type="html">&lt;搭建博客的一点感想&gt;</summary>
     
     
     
+    <category term="博客" scheme="http://gougeblog.com/categories/%E5%8D%9A%E5%AE%A2/"/>
     
     
-    <category term="文字" scheme="http://gougeblog.com/tags/%E6%96%87%E5%AD%97/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Hello World</title>
-    <link href="http://gougeblog.com/2021/01/20/hello-world/"/>
-    <id>http://gougeblog.com/2021/01/20/hello-world/</id>
-    <published>2021-01-20T12:28:51.041Z</published>
-    <updated>2021-01-22T02:24:45.610Z</updated>
-    
-    <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><pre><code class="bash">$ hexo new &quot;My New Post&quot;</code></pre><p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><pre><code class="bash">$ hexo server</code></pre><p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><pre><code class="bash">$ hexo generate</code></pre><p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><pre><code class="bash">$ hexo deploy</code></pre><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.io/docs/&quot;&gt;documentation&lt;/a&gt; for</summary>
-      
-    
-    
-    
+    <category term="感想" scheme="http://gougeblog.com/tags/%E6%84%9F%E6%83%B3/"/>
     
   </entry>
   
