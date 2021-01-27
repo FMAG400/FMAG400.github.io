@@ -1214,7 +1214,7 @@ pre .javascript .function {
 }
 .links-of-author a::before,
 .links-of-author span.exturl::before {
-  background: #ffd2d2;
+  background: #9eff2e;
   border-radius: 50%;
   content: ' ';
   display: inline-block;
@@ -2903,4 +2903,24 @@ h6 {
   line-height: 1.5;
   margin: 20px 0 0px;
   padding: 0;
+}
+.post-block {
+  background: var(--content-bg-color);
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 2px 0 #000, 0 3px 1px -2px #000, 0 1px 5px 0 #000;
+  padding: 10px;
+}
+.post-button {
+  margin-top: 0px;
+  text-align: center;
+}
+.v[data-class=v] {
+  font-size: 50px;
+  text-align: left;
+}
+.v[data-class=v] {
+  font-size: 100px;
+  font-family: 'STXinwei';
+  font-weight: bold;
+  text-align: left;
 }

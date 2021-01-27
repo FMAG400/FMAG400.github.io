@@ -6,7 +6,7 @@
     <content><![CDATA[<h3 id="gt-gt-为什么要搭Blog？"><a href="#gt-gt-为什么要搭Blog？" class="headerlink" title=">> 为什么要搭Blog？"></a>&gt;&gt; 为什么要搭Blog？</h3><hr>
 <p>其实这个想法一直都有, 只是总有别的事或者懒。现在为了更好的对自己学过的东西进行总结, 因此建了个博客把一些学习笔记详细并系统的记录下来, 这样也方便了自己学习和回顾。趁现在放假花了点时间把Blog搭起来了, 使用了框架Hexo+主题Next-Gemini, 先放到了Github的仓库然后为了个性化而绑定一个自己喜欢的域名。</p>
 <h3 id="gt-gt-背景知识"><a href="#gt-gt-背景知识" class="headerlink" title=">> 背景知识"></a>&gt;&gt; 背景知识</h3><hr>
-<p>使用开源项目Hexo搭建了个人博客, 主题是Next &amp; Gemini。</p>
+<p>使用开源项目博客框架Hexo搭建了个人博客在mac系统上, 主题是Next-Gemini。</p>
 <ol>
 <li><p>Hexo下载初始化后包含的文件:</p>
 <ul>
@@ -51,18 +51,20 @@
 <li><p>hexo server - 在本地启动服务器, 将生成的html网页部署到本地服务器</p>
 </li>
 <li><p>hexo deploy - 部署网站, 将生成的html网页代码推送到github</p>
-<p>常用的缩写 “hexo clean &amp; hexo g &amp; hexo s” 适用于调试网页时在本地(localhost:4000)查看网页效果, 而 “hexo clean &amp;&amp; hexo g &amp;&amp; hexo d” 是部署到所有人都可以访问的网站上(本文购买了Namecheap的域名). 其实不购买域名也可以, 放到github上也能够被所有人访问到, 但是访问地址后缀是.github.io, 所以为了特别点还是要花点钱</p>
+<p>常用的缩写 “hexo clean &amp;&amp; hexo g &amp;&amp; hexo s” 适用于调试网页时在本地(localhost:4000)查看网页效果, 而 “hexo clean &amp;&amp; hexo g &amp;&amp; hexo d” 是部署到所有人都可以访问的网站上(本文购买了Namecheap的域名). 其实不购买域名也可以, 放到github上也能够被所有人访问到, 但是访问地址后缀是.github.io, 所以为了特别点还是要花点钱</p>
 </li>
 </ul>
 </li>
 </ol>
 <p>通过学习他人的文章或者视频, 搭建博客以及绑定域名等都不是问题. 同时, 配置一些基础的功能,例如统计文章字数, 记录文章浏览人数, 网站建站时常等, 这些都不需要什么编程的基础就能够很快实现, 同时有任何问题都可以通过关键字搜到解决办法.<br>但是为了更好的了解hexo这个开源项目, 我们还是需要深入学习html和css和js, 这样无论是更改css样式还是调整网页的布局都更高效.  </p>
+<h3 id="gt-gt-如何调试样式？"><a href="#gt-gt-如何调试样式？" class="headerlink" title=">> 如何调试样式？"></a>&gt;&gt; 如何调试样式？</h3><hr>
+<p>hexo原始的框架基本已经提供了所有我们需要的样式, 我们需要做的就是在这个基础上设计我们自己喜欢的布局。我们可以通过快捷键 “fn+f12” 打开控制台, 这时我们能够看到控制台的工具栏有Elements, Console, Sources,…, Application这些标签页,在这里我们使用最多的就是Elements - 查看网页的HTML和CSS, 左边的呈现的是HTML结构, 右边是当前指定元素下的CSS样式, 这时我们能够通过修改这两个结构的值来直接观察网页的变化, 并且定位到我们想修改的地方(节省不少时间, 因为样式文件有很多)。</p>
 <h3 id="gt-gt-碰到的问题"><a href="#gt-gt-碰到的问题" class="headerlink" title=">> 碰到的问题"></a>&gt;&gt; 碰到的问题</h3><hr>
 <p>值得一提的是, 在调试blog的时候突然出现了一个错误:</p>
 <figure class="highlight plain"><table><tbody><tr><td class="code"><pre><span class="line">// Custom layer</span><br><span class="line">   // ----------------------------------------------</span><br><span class="line">   for $inject_style in hexo-config('injects.style')</span><br><span class="line">       @import $inject_style;</span><br></pre></td></tr></tbody></table></figure>
 <p>然后整个网页变成没有样式的布局. 这个问题可以这样解决, 通过(<a href="https://blog.csdn.net/qq_52116176/article/details/109406842">https://blog.csdn.net/qq_52116176/article/details/109406842</a>): </p>
 <ol>
-<li>先在 “themes/next/source/css” 里面创建一个 “_custom” 文件夹, 然后在该文件夹里面创建”style.styl”, 并且添加以下代码:<figure class="highlight plain"><table><tbody><tr><td class="code"><pre><span class="line">body { </span><br><span class="line">    background: url(/images/greek-vase.png);</span><br><span class="line">    background-repeat: repeat;// 设定背景图片重复填充</span><br><span class="line">    background-attachment: fixed;// 设置背景图片不随页面滚动</span><br><span class="line">    background-position: ; // 设置背景图片位置为默认值</span><br><span class="line">    background-size: cover // 此时会保持图像的纵横比并将图像缩放成将完全覆盖背景定位区域的最小大小。</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure></li>
+<li>先在 “themes/next/source/css” 里面创建一个 “_custom” 文件夹, 然后在该文件夹里面创建”style.styl” (这个文件的目的是让用户自己自定义一些样式, 在这里面的样式的优先级最高), 并且添加以下代码:<figure class="highlight plain"><table><tbody><tr><td class="code"><pre><span class="line">body { </span><br><span class="line">    background: url(/images/greek-vase.png);</span><br><span class="line">    background-repeat: repeat;// 设定背景图片重复填充</span><br><span class="line">    background-attachment: fixed;// 设置背景图片不随页面滚动</span><br><span class="line">    background-position: ; // 设置背景图片位置为默认值</span><br><span class="line">    background-size: cover // 此时会保持图像的纵横比并将图像缩放成将完全覆盖背景定位区域的最小大小。</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure></li>
 <li>然后修改在 “themes/source/css/main.styl” 路径下的 “main.styl” 就能够更换blog的背景了, 并且网页也恢复了正常显示. <figure class="highlight plain"><table><tbody><tr><td class="code"><pre><span class="line">// Custom Layer</span><br><span class="line">// --------------------------------------------------</span><br><span class="line">for $inject_style in hexo-config('injects.style')</span><br><span class="line">    // @import $inject_style;</span><br><span class="line">    @import "_custom/style.styl";</span><br></pre></td></tr></tbody></table></figure>
 
 
