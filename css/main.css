@@ -193,7 +193,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'STXinwei', 'Times New Roman', "PingFang SC", "Microsoft YaHei", sans-serif;
+  font-family: 'Microsoft JhengHei', 'Times New Roman', "PingFang SC", "Microsoft YaHei", sans-serif;
   font-weight: bold;
   line-height: 1.5;
   margin: 20px 0 15px;
@@ -1030,7 +1030,7 @@ pre .javascript .function {
   color: var(--brand-hover-color);
 }
 .site-title {
-  font-family: 'STXinwei', 'Times New Roman', "PingFang SC", "Microsoft YaHei", sans-serif;
+  font-family: 'Microsoft JhengHei', 'Times New Roman', "PingFang SC", "Microsoft YaHei", sans-serif;
   font-size: 1.375em;
   font-weight: normal;
   margin: 0;
@@ -1214,7 +1214,7 @@ pre .javascript .function {
 }
 .links-of-author a::before,
 .links-of-author span.exturl::before {
-  background: #d6ff73;
+  background: #ffdd38;
   border-radius: 50%;
   content: ' ';
   display: inline-block;
@@ -2789,6 +2789,9 @@ background-position
 .site-brand-container {
   position: relative;
 }
+.site {
+  box-shadow: 1px 1px 5px 1px;
+}
 .site-meta {
   background-image: linear-gradient(to left, #db7093, #20b2aa, #4169e1);
   color: #fff;
@@ -2797,7 +2800,7 @@ background-position
 .site-title {
   color: #fff;
   display: inline-block;
-  font-family: STXinwei;
+  font-family: 'ZCOOL KuaiLe';
   font-size: 1.375em;
   font-weight: normal;
   line-height: 1.5;
@@ -2830,6 +2833,7 @@ background-position
 }
 .site-nav {
   display: block;
+  font-family: 'ZCOOL KuaiLe';
 }
 .site-nav-toggle .toggle .toggle-line {
   background: #fff;
@@ -2862,7 +2866,7 @@ background-color
 }
 .posts-expand .post-meta {
   color: #555;
-  font-family: 'Times New Roman', "PingFang SC", "Microsoft YaHei", sans-serif;
+  font-family: 'ZCOOL KuaiLe', "PingFang SC", "Microsoft YaHei", sans-serif;
   font-size: 0.75em;
   margin: 0;
   text-align: center;
@@ -2898,11 +2902,13 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'STXinwei', 'Times New Roman', "PingFang SC", "Microsoft YaHei", sans-serif;
+  font-family: 'ZCOOL KuaiLe', "PingFang SC", "Microsoft YaHei", sans-serif;
   font-weight: bold;
   line-height: 1.5;
   margin: 20px 0 0px;
   padding: 0;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
 }
 .post-block {
   background: var(--content-bg-color);
@@ -2914,13 +2920,51 @@ h6 {
   margin-top: 0px;
   text-align: center;
 }
-.v[data-class=v] {
-  font-size: 50px;
-  text-align: left;
+.content {
+  padding-top: 5px;
 }
-.v[data-class=v] {
-  font-size: 100px;
-  font-family: 'STXinwei';
+.site-author-image {
+  border: none;
+  display: block;
+  margin: 0 auto;
+  max-width: 150px;
+  padding: 2px;
+  border-radius: 50%;
+}
+.sidebar {
+  background: var(--body-bg-color);
+  box-shadow: 1px 1px 5px 1px;
+  margin-top: 100%;
+  position: static;
+  width: 240px;
+  border-radius: 0.5rem;
+}
+.sidebar-inner {
+  background: var(--content-bg-color);
+  border-radius: 0.5rem;
+  box-sizing: border-box;
+  color: var(--text-color);
+  width: 240px;
+  opacity: 0;
+}
+.vpower.txt-right {
+  display: none;
+}
+.vpanel {
+  color: #222;
+  font-size: 20px;
+  font-family: 'ZCOOL KuaiLe';
   font-weight: bold;
   text-align: left;
+  border-radius: 0.5rem;
+}
+.comments {
+  background: var(--content-bg-color);
+  border-radius: 0.5rem;
+  box-shadow: 1px 1px 5px 1px;
+  margin-top: 12px;
+  padding: 40px;
+}
+.main-inner {
+  font-family: 'ZCOOL KuaiLe';
 }
