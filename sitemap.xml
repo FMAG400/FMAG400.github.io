@@ -2,9 +2,30 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://gougeblog.com/2021/01/22/my-new-post/</loc>
+    
+    <lastmod>2021-01-31</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://gougeblog.com/2021/01/30/java_note_1/</loc>
+    
+    <lastmod>2021-01-31</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://gougeblog.com/2021/01/30/note-network-1/</loc>
+    
+    <lastmod>2021-01-30</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://gougeblog.com/about/index.html</loc>
     
-    <lastmod>2021-01-29</lastmod>
+    <lastmod>2021-01-30</lastmod>
     
   </url>
   
@@ -22,25 +43,32 @@
     
   </url>
   
-  <url>
-    <loc>http://gougeblog.com/2021/01/22/my-new-post/</loc>
-    
-    <lastmod>2021-01-26</lastmod>
-    
-  </url>
-  
 
   <url>
     <loc>http://gougeblog.com/</loc>
-    <lastmod>2021-01-30</lastmod>
+    <lastmod>2021-01-31</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
 
   
   <url>
-    <loc>http://gougeblog.com/tags/%E6%84%9F%E6%83%B3/</loc>
-    <lastmod>2021-01-30</lastmod>
+    <loc>http://gougeblog.com/tags/JAVA/</loc>
+    <lastmod>2021-01-31</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://gougeblog.com/tags/HEXO/</loc>
+    <lastmod>2021-01-31</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://gougeblog.com/tags/Network/</loc>
+    <lastmod>2021-01-31</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
@@ -48,8 +76,22 @@
 
   
   <url>
-    <loc>http://gougeblog.com/categories/%E5%8D%9A%E5%AE%A2/</loc>
-    <lastmod>2021-01-30</lastmod>
+    <loc>http://gougeblog.com/categories/JAVA/</loc>
+    <lastmod>2021-01-31</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://gougeblog.com/categories/HEXO/</loc>
+    <lastmod>2021-01-31</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://gougeblog.com/categories/Network/</loc>
+    <lastmod>2021-01-31</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>

@@ -1,11 +1,80 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>JAVA-Note_1</title>
+    <url>/2021/01/30/java_note_1/</url>
+    <content><![CDATA[<p><strong></strong></p><center><strong>面向对象 - 分工而治, 统一管理</strong></center><p></p>
+<h3 id="一-三大特性"><a href="#一-三大特性" class="headerlink" title="一.三大特性"></a>一.三大特性</h3><hr>
+<ol>
+<li><strong>封装 Encapsulation</strong>   <ul>
+<li>类的信息隐藏与内部且不能被直接访问 - private </li>
+<li>可通过特定的方法实现隐藏信息的访问 - 设置get和set方法</li>
+</ul>
+</li>
+</ol>
+<ol start="2">
+<li><strong>继承 Inheritance</strong>   <ul>
+<li>类与类之间的关系 - 父类(基类) - 子类(派生), 子类继承父类所有属性和方法, 父类不能调用子类的东西。</li>
+<li>extends - 只能继承一个父类, <figure class="highlight plain"><table><tbody><tr><td class="code"><pre><span class="line">public class son extends F { }</span><br></pre></td></tr></tbody></table></figure></li>
+<li>子类不可继承构造方法(若要继承, 可使用super() - 表上一级&amp;父类, 置于子类构造方法内第一行)。</li>
+<li><strong>(1) 重写</strong><ul>
+<li>父类的成员方法只能被继承他的子类重写 <strong>“@override”</strong>。</li>
+<li>重写的成员方法无论是参数还是返回类型(也可设置为子类类型)都必须与被重写方法相同。</li>
+<li>子类中重写方法的访问权限应该 &gt;= 父类中被重写方法的权限, 访问修饰符 -&gt; **’public, protected, default, private’**，由左往右权限越来越低。</li>
+<li>final 和 static 本质不能被重写。</li>
+</ul>
+</li>
+<li><strong>(2) final</strong><ul>
+<li>置于类前则不能被继承, 方法前则不能被重写, 变量前则不能被改变, 赋值前代表构造函数或者构造代码块。</li>
+</ul>
+</li>
+</ul>
+</li>
+</ol>
+<ol start="3">
+<li><strong>多态 Professionaly</strong> <figure class="highlight plain"><table><tbody><tr><td class="code"><pre><span class="line">//调用重写方法, 但子类特有方法无法调用。</span><br><span class="line">Father object = new Child() </span><br></pre></td></tr></tbody></table></figure>
+<ul>
+<li>先继承, 再重写, 后才有多态,  相同的事物, 调用其相同的方法且参数也相同时, 但表现的行为却不同。</li>
+<li>不同子类继承同一父类, 结果对同一方法的重写可以表现出不同的行为。</li>
+</ul>
+</li>
+</ol>
+<h3 id="二-接口-interface"><a href="#二-接口-interface" class="headerlink" title="二.接口 interface"></a>二.接口 interface</h3><hr>
+<ul>
+<li><strong>定义了一个接口, 只包含方法和常量, 且方法仅声明不需要实现。</strong> <figure class="highlight plain"><table><tbody><tr><td class="code"><pre><span class="line">接口</span><br><span class="line">public interface Inf { </span><br><span class="line">    void fun1; </span><br><span class="line">    void fun2 </span><br><span class="line">}</span><br><span class="line">实现类</span><br><span class="line">public class Temp implements Inf { </span><br><span class="line">    @Override</span><br><span class="line">    public void fun1() {</span><br><span class="line"></span><br><span class="line">    }</span><br><span class="line"></span><br><span class="line">    @Override</span><br><span class="line">    public void fun2() {</span><br><span class="line"></span><br><span class="line">    }</span><br><span class="line">}</span><br><span class="line">实现类中必须实现所有接口定义的方法, 否则报错。</span><br><span class="line">main函数中继承实现类的时候应该 " = new 对应的接口" 而不是实现类本身。</span><br></pre></td></tr></tbody></table></figure>
+
+</li>
+</ul>
+<h3 id="三-抽象-abstract"><a href="#三-抽象-abstract" class="headerlink" title="三.抽象 abstract"></a>三.抽象 abstract</h3><hr>
+<ul>
+<li>abstract修饰的方法叫抽象方法, 其不能实例化。</li>
+<li>有抽象方法则该类一定是抽象类。</li>
+<li>继承父类的抽象类, 一定要实现所有的抽象方法。</li>
+</ul>
+<hr>
+<ul>
+<li><strong>抽象类和接口的区别</strong>  <ul>
+<li>抽象类 - 可以不包含抽象方法。</li>
+<li>抽象类 - 被子类继承 ‘extends’, 接口要被子类 ‘implements’。</li>
+<li>接口支持多继承（一个类可以实现多个接口）, 但是类只能继承一个。</li>
+<li>事物本质 - 抽象类, 一种操作 - 接口</li>
+</ul>
+</li>
+</ul>
+]]></content>
+      <categories>
+        <category>JAVA</category>
+      </categories>
+      <tags>
+        <tag>JAVA</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>搭建博客</title>
     <url>/2021/01/22/my-new-post/</url>
-    <content><![CDATA[<h3 id="gt-gt-为什么要搭Blog？"><a href="#gt-gt-为什么要搭Blog？" class="headerlink" title=">> 为什么要搭Blog？"></a>&gt;&gt; 为什么要搭Blog？</h3><hr>
+    <content><![CDATA[<h3 id="为什么要搭Blog？"><a href="#为什么要搭Blog？" class="headerlink" title="为什么要搭Blog？"></a>为什么要搭Blog？</h3><hr>
 <p>其实这个想法一直都有, 只是总有别的事或者懒。现在为了更好的对自己学过的东西进行总结, 因此建了个博客把一些学习笔记详细并系统的记录下来, 这样也方便了自己学习和回顾。趁现在放假花了点时间把Blog搭起来了, 使用了框架Hexo+主题Next-Gemini, 先放到了Github的仓库然后为了个性化而绑定一个自己喜欢的域名。</p>
-<h3 id="gt-gt-背景知识"><a href="#gt-gt-背景知识" class="headerlink" title=">> 背景知识"></a>&gt;&gt; 背景知识</h3><hr>
+<h3 id="背景知识"><a href="#背景知识" class="headerlink" title="背景知识"></a>背景知识</h3><hr>
 <p>使用开源项目博客框架Hexo搭建了个人博客在mac系统上, 主题是Next-Gemini。</p>
 <ol>
 <li><p>Hexo下载初始化后包含的文件:</p>
@@ -57,7 +126,7 @@
 </li>
 </ol>
 <p>通过学习他人的文章或者视频, 搭建博客以及绑定域名等都不是问题. 同时, 配置一些基础的功能,例如统计文章字数, 记录文章浏览人数, 网站建站时常等, 这些都不需要什么编程的基础就能够很快实现, 同时有任何问题都可以通过关键字搜到解决办法.<br>但是为了更好的了解hexo这个开源项目, 我们还是需要深入学习html和css和js, 这样无论是更改css样式还是调整网页的布局都更高效.  </p>
-<h3 id="gt-gt-如何调试样式？"><a href="#gt-gt-如何调试样式？" class="headerlink" title=">> 如何调试样式？"></a>&gt;&gt; 如何调试样式？</h3><hr>
+<h3 id="如何调试样式？"><a href="#如何调试样式？" class="headerlink" title="如何调试样式？"></a>如何调试样式？</h3><hr>
 <p>hexo原始的框架基本已经提供了所有我们需要的样式, 我们需要做的就是在这个基础上设计我们自己喜欢的布局。我们可以通过快捷键 “fn+f12” 打开控制台, 这时我们能够看到控制台的工具栏有Elements, Console, Sources,…, Application这些标签页,在这里我们使用最多的就是Elements - 查看网页的HTML和CSS, 左边的呈现的是HTML结构, 右边是当前指定元素下的CSS样式, 这时我们能够通过修改这两个结构的值来直接观察网页的变化, 并且定位到我们想修改的地方(节省不少时间, 因为样式文件有很多)。</p>
 <h3 id="gt-gt-碰到的问题"><a href="#gt-gt-碰到的问题" class="headerlink" title=">> 碰到的问题"></a>&gt;&gt; 碰到的问题</h3><hr>
 <p>值得一提的是, 在调试blog的时候突然出现了一个错误:</p>
@@ -70,16 +139,106 @@
 
 </li>
 </ol>
-<h3 id="gt-gt-个人建议"><a href="#gt-gt-个人建议" class="headerlink" title=">>个人建议"></a>&gt;&gt;个人建议</h3><hr>
+<h3 id="个人建议"><a href="#个人建议" class="headerlink" title="个人建议"></a>个人建议</h3><hr>
 <ul>
 <li>Blog搭建很快, 毕竟不太需要什么基础, 而样式的设计&amp;布局则需要花时间去学习 ‘HTML, CSS, JS’。</li>
 </ul>
+<h3 id="参考-amp-感谢"><a href="#参考-amp-感谢" class="headerlink" title="参考&amp;感谢"></a>参考&amp;感谢</h3><hr>
+<ol>
+<li><a href="https://zhuanlan.zhihu.com/p/28128674">hexo的next主题个性化教程:打造炫酷网站</a></li>
+<li><a href="https://thief.one/2017/03/03/Hexo%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E6%95%99%E7%A8%8B/">Hexo搭建博客教程</a></li>
+<li><a href="https://zhuanlan.zhihu.com/p/26625249?utm_source=qq&amp;utm_medium=social">GitHub+Hexo 搭建个人网站详细教程</a></li>
+<li><a href="https://jmyblog.top/">谁把钱丢了</a></li>
+</ol>
 ]]></content>
       <categories>
-        <category>博客</category>
+        <category>HEXO</category>
       </categories>
       <tags>
-        <tag>感想</tag>
+        <tag>HEXO</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>计算机网络-Note_1</title>
+    <url>/2021/01/30/note-network-1/</url>
+    <content><![CDATA[<h3 id="四种时延delay类型"><a href="#四种时延delay类型" class="headerlink" title="四种时延delay类型"></a>四种时延delay类型</h3><hr>
+<blockquote>
+<p>分组转换中的延迟,丢失和吞吐量理想状态是：希望因特网服务能够在任意两个end systems之间瞬间移动大量的数据而没有任何数据的丢失。</p>
+</blockquote>
+<ol>
+<li><strong>nodal processing delay - 节点处理时延</strong><ul>
+<li>检查分组首部和决定的将该分组导向何处所需要的时间是处理时延的一部分。</li>
+</ul>
+</li>
+</ol>
+<ol start="2">
+<li><strong>queuing delay - 排队时延</strong><ul>
+<li>当分组在链路上等待传输时的情况。若该队列当前为空, 并且当前没有其他分组在传输, 那么该分组的queuing delay 时延为0。反之则大。在毫秒到微秒级。</li>
+<li>a表示packet到达queue的的平均速率(pkt/s),R 是bit从queue中推出的速率(bps), 假设所有的packet都是由L bit组成，则bit到达queue的平均速率是La (bps), 最后, 若queue很大, 则可以容纳很多bit, 比率aL/R 被称为流量强度(traffic intensity), 一般aL/R是不能大于1。还有就是当N个分组同时到达queue时, 第一个packet无queuing delay, 第二个有L/R 的排队时延，第n个有(n-1)L/R。</li>
+<li>因为queue的容量f是有限的, 所以traffic intensity 接近于1时queuing delay也不会趋向无穷大, 而是到达的packet发现一个满的queue的话, 由于没有地方存储, 则router会drop掉这个packet。因此一个节点的性能需要根据delay来衡量, 而且要根据packet loss的概率来度量。</li>
+</ul>
+</li>
+</ol>
+<ol start="3">
+<li><strong>transmission delay - 传输时延(存储转发时延)</strong><ul>
+<li>分组一般以先到先服务的方式传输, </li>
+<li>L 比特表示分组的长度: packet length (bits), R: link bandwidth(bps) 表示从路由器A传到路由器B的链路传输速率。d(trans) = (L / R) 表示将所有分组的比特传输到链路所需要的时间, 一般传输时延在毫秒到微秒级。</li>
+</ul>
+</li>
+</ol>
+<ol start="4">
+<li><strong>propagation delay - 传播时延</strong><ul>
+<li>d: length of pysical link, s: propagation speed 速率范围是 ~2 x 10^8 m/s, 等于或略小于光速。传播速率取决于link physical media, d(prop) = d / s。</li>
+<li>一个bit被推向链路, 该bit需要向路由器B传播, 从该链路的起点到路由器B传播所需要的时间是propagrtion delay。传播时延在毫秒的量级。</li>
+</ul>
+</li>
+</ol>
+<ol start="5">
+<li><strong>Transmission delay 和 propagation delay 的区别</strong><ul>
+<li>Transmission 是router将分组推出所需要的时间, 取决于分组 length 和 link 传输速率。</li>
+<li>Propagation 是bit从一个router到另一个router的时间, 取决于两路由之间的距离和传播速率(取决于物理介质)。</li>
+</ul>
+</li>
+</ol>
+<h3 id="网络层次划分"><a href="#网络层次划分" class="headerlink" title="网络层次划分"></a>网络层次划分</h3><hr>
+<ol>
+<li><strong>因特网传输协议</strong><ul>
+<li><strong>传输控制协议 TCP</strong> - 面向连接, 可靠的数据传输服务, 在握手后就在两个进程的socket之间建立一个TCP connection。 数据传输单位是: 报文段。</li>
+<li><strong>用户数据协议 UDP</strong> - 不可靠的数据传输服务, 是一种轻量级运输层协议, 无连接的, 因此两个进程通信前没有握手过程, 并且当进程通过UDP套接字发送message，UDP不保证该message能够被接收进程接收到, 不仅如此，接收进程接收到的message也有可能是乱序到达的, 并且UDP没有拥塞控制, 所以发送端可以以任何速率向下面的层注入数据。数据传输单位是: 用户数据报。</li>
+</ul>
+</li>
+</ol>
+<hr>
+<ol start="2">
+<li><p><strong>OSI七层模型以及TCP/IP五层模型</strong></p>
+ <div align="center"><img width="300" height="300" src="/images/OSI_TCP.png"></div>
+
+<ul>
+<li><p>HTTP - Hyper test transfer protocol - 超文本传输协议,<br>SMTP - Simple message transfer protocol - 简单信息传输协议,<br>FTP - File transfer protocol - 文件传输协议,<br>UDP - User datagram protocol - 用户数据报协议</p>
+</li>
+<li><p><strong>(1) 应用层 Applications</strong> - FTP, HTTP, SMTP, SKYPE<br>HTTP(它为web文档提供了请求和传送)<br>SMTP(它提供了电子邮件报文的传输)<br>FTP(它提供了两个end-system之间的文件传送)<br>应用层协议分布在多个端系统上, 一个端系统中的应用程序使用协议与另一个端系统中的应用程序交换信息分组, 我们将这种位于application的信息分组称为报文(message)。</p>
+</li>
+<li><p><strong>(2) 传输层 Transport</strong> - TCP, UDP<br>在因特网中, 有两个运输层协议, 将运输层分组称为报文段segment。</p>
+</li>
+<li><p><strong>(3) 网络层 Network</strong> - IP, 路由协议</p>
+<ul>
+<li>因特网的网络层负责把datagram的网络层分组从一台host移动到另一台host, 源host中的TCP或UDP向网络层递交transport层报文段segment(类似向邮政信件提供目的地址)。</li>
+<li>网络层还包括了IP协议, 该协议定义了datagram中的各个字段以及end system和router如何做用于这些字段。因特网的network也包括决定router的选路协议, datagram根据该router从源host传到destination host。网络层也被称为IP层, 这反映了IP可以将因特网连接在一起。</li>
+</ul>
+</li>
+<li><p><strong>(4) 链路层 Link</strong> - 以太网 Ethernet, 802.111(WI-FI), PPP<br>  为了把packet从一个节点(host或router)移动到路径上的下一个节点, network层需要链路层link的服务。帧(frame)</p>
+</li>
+<li><p><strong>(5) 物理层 Physical</strong> - bits 金属丝, 电线等</p>
+</li>
+</ul>
+</li>
+</ol>
+]]></content>
+      <categories>
+        <category>Network</category>
+      </categories>
+      <tags>
+        <tag>Network</tag>
       </tags>
   </entry>
 </search>
