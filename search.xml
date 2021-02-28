@@ -70,6 +70,17 @@
       </tags>
   </entry>
   <entry>
+    <title>SpringBoot_helloworld</title>
+    <url>/2021/03/01/SpringBoot-helloworld/</url>
+    <content><![CDATA[]]></content>
+      <categories>
+        <category>SpringBoot</category>
+      </categories>
+      <tags>
+        <tag>SpringBoot</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>搭建博客</title>
     <url>/2021/01/22/my-new-post/</url>
     <content><![CDATA[<h3 id="为什么要搭Blog？"><a href="#为什么要搭Blog？" class="headerlink" title="为什么要搭Blog？"></a>为什么要搭Blog？</h3><hr>
@@ -239,6 +250,40 @@
       </categories>
       <tags>
         <tag>Network</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Python-Note_1</title>
+    <url>/2021/02/04/python-Note-1/</url>
+    <content><![CDATA[<h3 id="斐波那契数列"><a href="#斐波那契数列" class="headerlink" title="斐波那契数列"></a>斐波那契数列</h3><h3 id=""><a href="#" class="headerlink" title=""></a></h3><p>eval<br>re.replace</p>
+<h3 id="完全数-欧拉公式"><a href="#完全数-欧拉公式" class="headerlink" title="完全数 - 欧拉公式"></a>完全数 - 欧拉公式</h3><h3 id="isalpha-enumerate-lambda-lower-filter-iteritems"><a href="#isalpha-enumerate-lambda-lower-filter-iteritems" class="headerlink" title="isalpha enumerate lambda .lower() filter iteritems"></a>isalpha enumerate lambda .lower() filter iteritems</h3><p>sorted &amp; sort 区别</p>
+<h3 id="dict-items-和dict-iteritems"><a href="#dict-items-和dict-iteritems" class="headerlink" title="dict.items()和dict.iteritems()"></a>dict.items()和dict.iteritems()</h3><p>dict.items()返回元组列表，dict.iteritems()返回字典中元组的迭代器对象为(key,value)。元组相同，但容器不同。迭代器就是用于迭代操作(for循环)。</p>
+<ol>
+<li><p><strong>区别</strong><br>列表一次性把所有元素加载到内存, 而构建迭代器时, 是以一种延迟计算的方式返回元素。这样做的优点是迭代器只需要几十个字节的空间, 因为它并没有把所有元素加载到内存中。</p>
+</li>
+<li><p><strong>list.index()</strong> 返回列表内搜索到的数的下标位置</p>
+</li>
+</ol>
+<ol start="3">
+<li><p><strong>求最大公约数 gcd -辗转相除法, 也叫欧几里得算法</strong></p>
+</li>
+<li><p><strong>求最小公倍数 lcm</strong></p>
+</li>
+<li><p><strong>等差数列</strong> sn = n*a1 + n(n-1)d/2   /  sn = n(a1+an)/2</p>
+</li>
+<li><p><strong>最大公共子串-动态规划</strong> </p>
+</li>
+<li><p><strong>处理字符串或列表的一些用法</strong></p>
+</li>
+<li><p><strong>二叉树</strong> </p>
+</li>
+</ol>
+]]></content>
+      <categories>
+        <category>Python</category>
+      </categories>
+      <tags>
+        <tag>Python</tag>
       </tags>
   </entry>
 </search>
