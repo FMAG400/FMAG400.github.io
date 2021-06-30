@@ -149,23 +149,20 @@
 </ol>
 <h3 id="类型"><a href="#类型" class="headerlink" title="类型"></a>类型</h3><hr>
 <ol>
-<li><p>数值类型</p>
-<ul>
+<li>数值类型<ul>
 <li>INT/INTEGER – 4 bytes (-, 2147483647) (4294967295)</li>
 <li>FLOAT – 4 bytes</li>
 <li>DOUBLE – 8 bytes</li>
 <li>DECIMAL(M,D) – 如果M&gt;D, M+2, D+2</li>
 </ul>
 </li>
-<li><p>字符串类型</p>
-<ul>
+<li>字符串类型<ul>
 <li>VARCHAR(25) – Uses up to 25 + 1 bytes. 0-65535 bytes.</li>
 <li>CHAR – 0-255 bytes</li>
 <li>TEXT – 0-65535 bytes</li>
 </ul>
 </li>
-<li><p>日期和时间</p>
-<ul>
+<li>日期和时间<ul>
 <li>DATE – 3 bytes, YYYY-MM-DD</li>
 <li>TIME – 3 bytes, HH:MM:SS</li>
 <li>YEAR – 1 bytes, YYYY</li>
@@ -356,6 +353,36 @@
       </tags>
   </entry>
   <entry>
+    <title>SpringBoot_new_web</title>
+    <url>/2021/03/05/SpringBoot-new-web/</url>
+    <content><![CDATA[<h3 id="静态资源目录"><a href="#静态资源目录" class="headerlink" title="静态资源目录"></a>静态资源目录</h3><ol>
+<li>静态资源需要放在类路径下: By default, Spring Boot serves static content from a directory called <strong>/static (or /public or /resources or /META-INF/resources)</strong> in the classpath or from the root of the ServletContext.<ul>
+<li>注意: 如果在Controller也有和静态资源相同的命名资源, 那么请求会先访问Controller后去静态资源找, 若前两者都没有则返回404.</li>
+</ul>
+</li>
+<li>可以自己指定静态路径, 以下代码添加在自己创建的.yaml文档(编辑配置文件, 和.properties一样)里, 作用是指定/static目录下的资源为静态资源, 且访问时需要在前面加上访问前缀/res(为了更好的搜索到目标文件), 这样的话之前1中的其他类路径就访问不到静态资源了:<figure class="highlight yaml"><table><tbody><tr><td class="code"><pre><span class="line"><span class="attr">spring:</span></span><br><span class="line">  <span class="attr">mvc:</span></span><br><span class="line">    <span class="comment"># 指定静态路径前需要加/res, 访问前缀</span></span><br><span class="line">    <span class="attr">static-path-pattern:</span> <span class="string">/res/**</span></span><br><span class="line"></span><br><span class="line">  <span class="attr">web:</span></span><br><span class="line">    <span class="attr">resources:</span></span><br><span class="line">      <span class="comment"># 指定静态路径为/static</span></span><br><span class="line">      <span class="attr">static-locations:</span> <span class="string">classpath:/static</span></span><br></pre></td></tr></tbody></table></figure>
+
+</li>
+</ol>
+<h3 id="Welcome-Page"><a href="#Welcome-Page" class="headerlink" title="Welcome Page"></a>Welcome Page</h3><ol>
+<li><strong>方法一</strong>: 在静态资源下放置一个<strong>index.html</strong>文件. <ul>
+<li>可以自己配置静态资源路径且添加前缀</li>
+</ul>
+</li>
+<li><strong>方法二</strong>: controller里处理请求 <strong>/index</strong>.</li>
+</ol>
+<h3 id="自定义Favicon"><a href="#自定义Favicon" class="headerlink" title="自定义Favicon"></a>自定义Favicon</h3><ol>
+<li>根据官方文档, 只需要在静态资源路径下放置名为<strong>favicon.ico</strong>的图片就会更改网页的图标.</li>
+</ol>
+]]></content>
+      <categories>
+        <category>SpringBoot</category>
+      </categories>
+      <tags>
+        <tag>SpringBoot</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Sorted Algorithms</title>
     <url>/2021/03/13/Sorted%20Algorithm/</url>
     <content><![CDATA[<h3 id="快速排序"><a href="#快速排序" class="headerlink" title="快速排序"></a>快速排序</h3><hr>
@@ -431,36 +458,6 @@
 </li>
 </ul>
 </li>
-</ol>
-]]></content>
-      <categories>
-        <category>SpringBoot</category>
-      </categories>
-      <tags>
-        <tag>SpringBoot</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>SpringBoot_new_web</title>
-    <url>/2021/03/05/SpringBoot-new-web/</url>
-    <content><![CDATA[<h3 id="静态资源目录"><a href="#静态资源目录" class="headerlink" title="静态资源目录"></a>静态资源目录</h3><ol>
-<li>静态资源需要放在类路径下: By default, Spring Boot serves static content from a directory called <strong>/static (or /public or /resources or /META-INF/resources)</strong> in the classpath or from the root of the ServletContext.<ul>
-<li>注意: 如果在Controller也有和静态资源相同的命名资源, 那么请求会先访问Controller后去静态资源找, 若前两者都没有则返回404.</li>
-</ul>
-</li>
-<li>可以自己指定静态路径, 以下代码添加在自己创建的.yaml文档(编辑配置文件, 和.properties一样)里, 作用是指定/static目录下的资源为静态资源, 且访问时需要在前面加上访问前缀/res(为了更好的搜索到目标文件), 这样的话之前1中的其他类路径就访问不到静态资源了:<figure class="highlight yaml"><table><tbody><tr><td class="code"><pre><span class="line"><span class="attr">spring:</span></span><br><span class="line">  <span class="attr">mvc:</span></span><br><span class="line">    <span class="comment"># 指定静态路径前需要加/res, 访问前缀</span></span><br><span class="line">    <span class="attr">static-path-pattern:</span> <span class="string">/res/**</span></span><br><span class="line"></span><br><span class="line">  <span class="attr">web:</span></span><br><span class="line">    <span class="attr">resources:</span></span><br><span class="line">      <span class="comment"># 指定静态路径为/static</span></span><br><span class="line">      <span class="attr">static-locations:</span> <span class="string">classpath:/static</span></span><br></pre></td></tr></tbody></table></figure>
-
-</li>
-</ol>
-<h3 id="Welcome-Page"><a href="#Welcome-Page" class="headerlink" title="Welcome Page"></a>Welcome Page</h3><ol>
-<li><strong>方法一</strong>: 在静态资源下放置一个<strong>index.html</strong>文件. <ul>
-<li>可以自己配置静态资源路径且添加前缀</li>
-</ul>
-</li>
-<li><strong>方法二</strong>: controller里处理请求 <strong>/index</strong>.</li>
-</ol>
-<h3 id="自定义Favicon"><a href="#自定义Favicon" class="headerlink" title="自定义Favicon"></a>自定义Favicon</h3><ol>
-<li>根据官方文档, 只需要在静态资源路径下放置名为<strong>favicon.ico</strong>的图片就会更改网页的图标.</li>
 </ol>
 ]]></content>
       <categories>
