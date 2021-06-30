@@ -1,97 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>Git</title>
-    <url>/2021/03/07/Git/</url>
-    <content><![CDATA[<h3 id="基本结构"><a href="#基本结构" class="headerlink" title="基本结构"></a>基本结构</h3><hr>
-<ol>
-<li>本地仓库由三部分组成, 工作区域，暂存区域(想象)和Git仓库.</li>
-</ol>
-<h3 id="常用命令"><a href="#常用命令" class="headerlink" title="常用命令"></a>常用命令</h3><hr>
-<ol>
-<li>git add <file>  <ul>
-<li>把文件加入到<strong>暂存区</strong>, 而git restore –staged <file>是把文件从<strong>暂存区</strong>取回.</file></li>
-</ul>
-</file></li>
-<li>git commit -m “word”   <ul>
-<li>把文件提交到<strong>仓库</strong>.</li>
-</ul>
-</li>
-<li>git status <ul>
-<li>查看文件当前状态, 是否已暂存已修改或已被跟踪.</li>
-</ul>
-</li>
-<li>git log <ul>
-<li>查看修改记录.</li>
-</ul>
-</li>
-<li>git diff <ul>
-<li>比较暂存区和工作目录的文件(左暂存/右工作目录), 查看文件改动, 而git diff –staged/–cached 比较的是暂存区和仓库的区别. 或者diff 快照1/快照2</li>
-</ul>
-</li>
-<li>git mv old_file new_file <ul>
-<li>改文件名, 终端无消息显示.</li>
-</ul>
-</li>
-<li>git reset HEAD~ <ul>
-<li>回到上一个快照</li>
-</ul>
-</li>
-<li>git reset 快照号 <ul>
-<li>能够恢复到’未来’</li>
-</ul>
-</li>
-<li>git commit –amend -m “ “<ul>
-<li>“新的提交说明” – 修改最近的一次提交 </li>
-</ul>
-</li>
-<li>git rm file_name <ul>
-<li>– rm 命令删除的只是工作目录和暂存区域的文件.(即取消跟踪，在下次提交时不纳入版本管理)</li>
-</ul>
-</li>
-<li>git rm -f file_name <ul>
-<li>–指把工作目录和缓存区的文件都删掉.</li>
-</ul>
-</li>
-<li>git rm –cached file_name <ul>
-<li>–指单把缓存区的内容删掉.</li>
-</ul>
-</li>
-</ol>
-<div align="center"><img src="/images/git.png"></div>
-
-
-<h3 id="分支"><a href="#分支" class="headerlink" title="分支"></a>分支</h3><hr>
-<p>实际开发中的分支分为:</p>
-<ul>
-<li>master - 主线, 用于发布</li>
-<li>Hotfix - 修复bug</li>
-<li>Release - 内部发布版本</li>
-<li>Develop - 进行开发, 生成可执行程序给Release</li>
-<li>Feature - 具体功能</li>
-</ul>
-<ol>
-<li><strong>创建分支</strong><br>默认分支为master, 如果我们需要对主程序进行修改, 后期添加新的功能, 我们可以创建新的分支, 待功能开发完毕后再把分支合并到主程序中.<ul>
-<li>git branch <branch name=""> 创建新的分支.</branch></li>
-<li>git checkout <branch name=""> 分支切换, HEAD指向新的分支, 创建新的分支后, git log只能看到当前分支下的所有记录. git checkout -b <branch name=""> 能够同时创建新的分支, 并且HEAD指向新的分支.</branch></branch></li>
-<li>git log –decorate –oneline –graph –all 能看到当前仓库的所有分支及HEAD指向, 还有版本信息.</li>
-</ul>
-</li>
-<li><strong>合并分支</strong><br>把分支合并到主线里.<ul>
-<li>git merge <branch name=""> 把当前分支合并到HEAD所指向的分支(master 主线).</branch></li>
-</ul>
-</li>
-<li><strong>删除分支</strong><br>为了使整个开发看起来更加清晰明了, 那么一些不必要的分支需要被删除.<br>git branch -d <branch name=""></branch></li>
-</ol>
-]]></content>
-      <categories>
-        <category>Git</category>
-      </categories>
-      <tags>
-        <tag>Git</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Linux</title>
     <url>/2021/03/21/Linux/</url>
     <content><![CDATA[<h3 id="文件基本属性指令"><a href="#文件基本属性指令" class="headerlink" title="文件基本属性指令"></a>文件基本属性指令</h3><hr>
@@ -353,33 +262,94 @@
       </tags>
   </entry>
   <entry>
-    <title>SpringBoot_new_web</title>
-    <url>/2021/03/05/SpringBoot-new-web/</url>
-    <content><![CDATA[<h3 id="静态资源目录"><a href="#静态资源目录" class="headerlink" title="静态资源目录"></a>静态资源目录</h3><ol>
-<li>静态资源需要放在类路径下: By default, Spring Boot serves static content from a directory called <strong>/static (or /public or /resources or /META-INF/resources)</strong> in the classpath or from the root of the ServletContext.<ul>
-<li>注意: 如果在Controller也有和静态资源相同的命名资源, 那么请求会先访问Controller后去静态资源找, 若前两者都没有则返回404.</li>
+    <title>Git</title>
+    <url>/2021/03/07/Git/</url>
+    <content><![CDATA[<h3 id="基本结构"><a href="#基本结构" class="headerlink" title="基本结构"></a>基本结构</h3><hr>
+<ol>
+<li>本地仓库由三部分组成, 工作区域，暂存区域(想象)和Git仓库.</li>
+</ol>
+<h3 id="常用命令"><a href="#常用命令" class="headerlink" title="常用命令"></a>常用命令</h3><hr>
+<ol>
+<li>git add <file>  <ul>
+<li>把文件加入到<strong>暂存区</strong>, 而git restore –staged <file>是把文件从<strong>暂存区</strong>取回.</file></li>
+</ul>
+</file></li>
+<li>git commit -m “word”   <ul>
+<li>把文件提交到<strong>仓库</strong>.</li>
 </ul>
 </li>
-<li>可以自己指定静态路径, 以下代码添加在自己创建的.yaml文档(编辑配置文件, 和.properties一样)里, 作用是指定/static目录下的资源为静态资源, 且访问时需要在前面加上访问前缀/res(为了更好的搜索到目标文件), 这样的话之前1中的其他类路径就访问不到静态资源了:<figure class="highlight yaml"><table><tbody><tr><td class="code"><pre><span class="line"><span class="attr">spring:</span></span><br><span class="line">  <span class="attr">mvc:</span></span><br><span class="line">    <span class="comment"># 指定静态路径前需要加/res, 访问前缀</span></span><br><span class="line">    <span class="attr">static-path-pattern:</span> <span class="string">/res/**</span></span><br><span class="line"></span><br><span class="line">  <span class="attr">web:</span></span><br><span class="line">    <span class="attr">resources:</span></span><br><span class="line">      <span class="comment"># 指定静态路径为/static</span></span><br><span class="line">      <span class="attr">static-locations:</span> <span class="string">classpath:/static</span></span><br></pre></td></tr></tbody></table></figure>
+<li>git status <ul>
+<li>查看文件当前状态, 是否已暂存已修改或已被跟踪.</li>
+</ul>
+</li>
+<li>git log <ul>
+<li>查看修改记录.</li>
+</ul>
+</li>
+<li>git diff <ul>
+<li>比较暂存区和工作目录的文件(左暂存/右工作目录), 查看文件改动, 而git diff –staged/–cached 比较的是暂存区和仓库的区别. 或者diff 快照1/快照2</li>
+</ul>
+</li>
+<li>git mv old_file new_file <ul>
+<li>改文件名, 终端无消息显示.</li>
+</ul>
+</li>
+<li>git reset HEAD~ <ul>
+<li>回到上一个快照</li>
+</ul>
+</li>
+<li>git reset 快照号 <ul>
+<li>能够恢复到’未来’</li>
+</ul>
+</li>
+<li>git commit –amend -m “ “<ul>
+<li>“新的提交说明” – 修改最近的一次提交 </li>
+</ul>
+</li>
+<li>git rm file_name <ul>
+<li>– rm 命令删除的只是工作目录和暂存区域的文件.(即取消跟踪，在下次提交时不纳入版本管理)</li>
+</ul>
+</li>
+<li>git rm -f file_name <ul>
+<li>–指把工作目录和缓存区的文件都删掉.</li>
+</ul>
+</li>
+<li>git rm –cached file_name <ul>
+<li>–指单把缓存区的内容删掉.</li>
+</ul>
+</li>
+</ol>
+<div align="center"><img src="/images/git.png"></div>
 
-</li>
-</ol>
-<h3 id="Welcome-Page"><a href="#Welcome-Page" class="headerlink" title="Welcome Page"></a>Welcome Page</h3><ol>
-<li><strong>方法一</strong>: 在静态资源下放置一个<strong>index.html</strong>文件. <ul>
-<li>可以自己配置静态资源路径且添加前缀</li>
+
+<h3 id="分支"><a href="#分支" class="headerlink" title="分支"></a>分支</h3><hr>
+<p>实际开发中的分支分为:</p>
+<ul>
+<li>master - 主线, 用于发布</li>
+<li>Hotfix - 修复bug</li>
+<li>Release - 内部发布版本</li>
+<li>Develop - 进行开发, 生成可执行程序给Release</li>
+<li>Feature - 具体功能</li>
+</ul>
+<ol>
+<li><strong>创建分支</strong><br>默认分支为master, 如果我们需要对主程序进行修改, 后期添加新的功能, 我们可以创建新的分支, 待功能开发完毕后再把分支合并到主程序中.<ul>
+<li>git branch <branch name=""> 创建新的分支.</branch></li>
+<li>git checkout <branch name=""> 分支切换, HEAD指向新的分支, 创建新的分支后, git log只能看到当前分支下的所有记录. git checkout -b <branch name=""> 能够同时创建新的分支, 并且HEAD指向新的分支.</branch></branch></li>
+<li>git log –decorate –oneline –graph –all 能看到当前仓库的所有分支及HEAD指向, 还有版本信息.</li>
 </ul>
 </li>
-<li><strong>方法二</strong>: controller里处理请求 <strong>/index</strong>.</li>
-</ol>
-<h3 id="自定义Favicon"><a href="#自定义Favicon" class="headerlink" title="自定义Favicon"></a>自定义Favicon</h3><ol>
-<li>根据官方文档, 只需要在静态资源路径下放置名为<strong>favicon.ico</strong>的图片就会更改网页的图标.</li>
+<li><strong>合并分支</strong><br>把分支合并到主线里.<ul>
+<li>git merge <branch name=""> 把当前分支合并到HEAD所指向的分支(master 主线).</branch></li>
+</ul>
+</li>
+<li><strong>删除分支</strong><br>为了使整个开发看起来更加清晰明了, 那么一些不必要的分支需要被删除.<br>git branch -d <branch name=""></branch></li>
 </ol>
 ]]></content>
       <categories>
-        <category>SpringBoot</category>
+        <category>Git</category>
       </categories>
       <tags>
-        <tag>SpringBoot</tag>
+        <tag>Git</tag>
       </tags>
   </entry>
   <entry>
@@ -468,6 +438,36 @@
       </tags>
   </entry>
   <entry>
+    <title>SpringBoot_new_web</title>
+    <url>/2021/03/05/SpringBoot-new-web/</url>
+    <content><![CDATA[<h3 id="静态资源目录"><a href="#静态资源目录" class="headerlink" title="静态资源目录"></a>静态资源目录</h3><ol>
+<li>静态资源需要放在类路径下: By default, Spring Boot serves static content from a directory called <strong>/static (or /public or /resources or /META-INF/resources)</strong> in the classpath or from the root of the ServletContext.<ul>
+<li>注意: 如果在Controller也有和静态资源相同的命名资源, 那么请求会先访问Controller后去静态资源找, 若前两者都没有则返回404.</li>
+</ul>
+</li>
+<li>可以自己指定静态路径, 以下代码添加在自己创建的.yaml文档(编辑配置文件, 和.properties一样)里, 作用是指定/static目录下的资源为静态资源, 且访问时需要在前面加上访问前缀/res(为了更好的搜索到目标文件), 这样的话之前1中的其他类路径就访问不到静态资源了:<figure class="highlight yaml"><table><tbody><tr><td class="code"><pre><span class="line"><span class="attr">spring:</span></span><br><span class="line">  <span class="attr">mvc:</span></span><br><span class="line">    <span class="comment"># 指定静态路径前需要加/res, 访问前缀</span></span><br><span class="line">    <span class="attr">static-path-pattern:</span> <span class="string">/res/**</span></span><br><span class="line"></span><br><span class="line">  <span class="attr">web:</span></span><br><span class="line">    <span class="attr">resources:</span></span><br><span class="line">      <span class="comment"># 指定静态路径为/static</span></span><br><span class="line">      <span class="attr">static-locations:</span> <span class="string">classpath:/static</span></span><br></pre></td></tr></tbody></table></figure>
+
+</li>
+</ol>
+<h3 id="Welcome-Page"><a href="#Welcome-Page" class="headerlink" title="Welcome Page"></a>Welcome Page</h3><ol>
+<li><strong>方法一</strong>: 在静态资源下放置一个<strong>index.html</strong>文件. <ul>
+<li>可以自己配置静态资源路径且添加前缀</li>
+</ul>
+</li>
+<li><strong>方法二</strong>: controller里处理请求 <strong>/index</strong>.</li>
+</ol>
+<h3 id="自定义Favicon"><a href="#自定义Favicon" class="headerlink" title="自定义Favicon"></a>自定义Favicon</h3><ol>
+<li>根据官方文档, 只需要在静态资源路径下放置名为<strong>favicon.ico</strong>的图片就会更改网页的图标.</li>
+</ol>
+]]></content>
+      <categories>
+        <category>SpringBoot</category>
+      </categories>
+      <tags>
+        <tag>SpringBoot</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>JAVA-IO</title>
     <url>/2021/03/05/java_IO/</url>
     <content><![CDATA[<p><strong></strong></p><center><strong>InputStream &amp; OutputStream</strong></center><p></p>
@@ -497,42 +497,6 @@
 </ul>
 </li>
 <li>明确是否需要额外功能 (转换流/高效流等)</li>
-</ol>
-]]></content>
-      <categories>
-        <category>JAVA</category>
-      </categories>
-      <tags>
-        <tag>JAVA</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>JAVA-Error&amp;Exception</title>
-    <url>/2021/03/10/java_error_exception/</url>
-    <content><![CDATA[<p><strong></strong></p><center><strong>错误&amp;异常的发生与处理</strong></center><p></p>
-<h3 id="错误-amp-异常的分类"><a href="#错误-amp-异常的分类" class="headerlink" title="错误&amp;异常的分类"></a>错误&amp;异常的分类</h3><hr>
-<ol>
-<li>检查性异常: 程序员无法预见，例如用户打开一个不存在的文件，这些异常在编译时不能被简单的忽略</li>
-<li>运行时异常: 运行时异常是可能被程序员避免的异常，</li>
-<li>错误: 错误不是异常，这已经脱离了程序员控制的问题，例如栈溢出，此时在编译中检查不到 </li>
-</ol>
-<h3 id="异常体系结构"><a href="#异常体系结构" class="headerlink" title="异常体系结构"></a>异常体系结构</h3><hr>
-<ul>
-<li>Java把异常当作对象来处理，定义了一个基类java.lang.Throwable作为所有异常的超类</li>
-<li>在Java API中已经定义了许多异常类，这些异常类分为两大类，Error和Exception</li>
-</ul>
-<h3 id="异常处理机制"><a href="#异常处理机制" class="headerlink" title="异常处理机制"></a>异常处理机制</h3><hr>
-<ol>
-<li><strong>抛出异常</strong></li>
-<li><strong>捕获异常</strong></li>
-<li><strong>异常处理的关键字有</strong>: try, catch, finally, throw, throws</li>
-<li><strong>主动抛出异常</strong>，例throw new ArithmeticException()主动抛出异常，一般在方法里主动抛出异常</li>
-<li><strong>自定义异常</strong>，只需要继承Exception类即可。<ul>
-<li>创建自定义异常</li>
-<li>在方法中通过throw关键字抛出异常</li>
-<li>如果在当前抛出异常的方法中处理异常，可以使用try-catch捕获并处理，</li>
-</ul>
-</li>
 </ol>
 ]]></content>
       <categories>
@@ -641,6 +605,114 @@ public class Temp implements Inf {
       </tags>
   </entry>
   <entry>
+    <title>JAVA-Error&amp;Exception</title>
+    <url>/2021/03/10/java_error_exception/</url>
+    <content><![CDATA[<p><strong></strong></p><center><strong>错误&amp;异常的发生与处理</strong></center><p></p>
+<h3 id="错误-amp-异常的分类"><a href="#错误-amp-异常的分类" class="headerlink" title="错误&amp;异常的分类"></a>错误&amp;异常的分类</h3><hr>
+<ol>
+<li>检查性异常: 程序员无法预见，例如用户打开一个不存在的文件，这些异常在编译时不能被简单的忽略</li>
+<li>运行时异常: 运行时异常是可能被程序员避免的异常，</li>
+<li>错误: 错误不是异常，这已经脱离了程序员控制的问题，例如栈溢出，此时在编译中检查不到 </li>
+</ol>
+<h3 id="异常体系结构"><a href="#异常体系结构" class="headerlink" title="异常体系结构"></a>异常体系结构</h3><hr>
+<ul>
+<li>Java把异常当作对象来处理，定义了一个基类java.lang.Throwable作为所有异常的超类</li>
+<li>在Java API中已经定义了许多异常类，这些异常类分为两大类，Error和Exception</li>
+</ul>
+<h3 id="异常处理机制"><a href="#异常处理机制" class="headerlink" title="异常处理机制"></a>异常处理机制</h3><hr>
+<ol>
+<li><strong>抛出异常</strong></li>
+<li><strong>捕获异常</strong></li>
+<li><strong>异常处理的关键字有</strong>: try, catch, finally, throw, throws</li>
+<li><strong>主动抛出异常</strong>，例throw new ArithmeticException()主动抛出异常，一般在方法里主动抛出异常</li>
+<li><strong>自定义异常</strong>，只需要继承Exception类即可。<ul>
+<li>创建自定义异常</li>
+<li>在方法中通过throw关键字抛出异常</li>
+<li>如果在当前抛出异常的方法中处理异常，可以使用try-catch捕获并处理，</li>
+</ul>
+</li>
+</ol>
+]]></content>
+      <categories>
+        <category>JAVA</category>
+      </categories>
+      <tags>
+        <tag>JAVA</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>搭建博客</title>
+    <url>/2021/01/22/my-new-post/</url>
+    <content><![CDATA[<h3 id="为什么要搭Blog？"><a href="#为什么要搭Blog？" class="headerlink" title="为什么要搭Blog？"></a>为什么要搭Blog？</h3><hr>
+<p>其实这个想法一直都有, 只是总有别的事或者懒。现在为了更好的对自己学过的东西进行总结, 因此建了个博客把一些学习笔记详细并系统的记录下来, 这样也方便了自己学习和回顾。趁现在放假花了点时间把Blog搭起来了, 使用了框架Hexo+主题Next-Gemini, 先放到了Github的仓库然后为了个性化而绑定一个自己喜欢的域名。</p>
+<h3 id="背景知识"><a href="#背景知识" class="headerlink" title="背景知识"></a>背景知识</h3><hr>
+<p>使用开源项目博客框架Hexo搭建了个人博客在mac系统上, 主题是Next-Gemini。</p>
+<ol>
+<li><strong>Hexo下载初始化后包含的文件</strong>:<ul>
+<li>_config.yml : 总体配置文件, 又被称为”站级配置文件”, 作用于整个blog站点</li>
+<li>source : md源文件目录, 该文件夹存放了一些子目录文件夹, 例如_posts, about, categories等<ul>
+<li>_posts : 存放blog文章, 文章基本都是由markdown语法来编写</li>
+<li>categories : 存放分类, 例如文章的种类</li>
+</ul>
+</li>
+<li>themes : 存放blog的主题, 例如本文使用的next<ul>
+<li>默认主题是landscape</li>
+<li>next 该主题包含以下文件:<ul>
+<li>_config.yml : 主题配置文件</li>
+<li>layout 构造html的模版</li>
+<li>source 静态资源目录, css &amp; js</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>public : 存放html, css, js等文件</li>
+<li>scaffolds : 存放了一些模版, 例如新建blog文章</li>
+<li>node_modules : NodeJs 所依赖的包, 后期可添加插件</li>
+<li>package-look.json : 支持NodeJs的包<br>Hexo最基本的功能是把markdown程序先翻译成JSON格式(JavaScript Object Notation)然后再生成html文件</li>
+</ul>
+</li>
+<li><strong>Hexo一些常用的命令</strong><ul>
+<li>hexo new page “ “ - 定义新文章 </li>
+<li>hexo clean  - 清除缓存文件(db.json) 和 已生成的静态文件(public)</li>
+<li>hexo generate - 预先生成静态文件, 例如html</li>
+<li>hexo server - 在本地启动服务器, 将生成的html网页部署到本地服务器</li>
+<li>hexo deploy - 部署网站, 将生成的html网页代码推送到github<br>常用的缩写 “hexo clean &amp;&amp; hexo g &amp;&amp; hexo s” 适用于调试网页时在本地(localhost:4000)查看网页效果, 而 “hexo clean &amp;&amp; hexo g &amp;&amp; hexo d” 是部署到所有人都可以访问的网站上(本文购买了Namecheap的域名). 其实不购买域名也可以, 放到github上也能够被所有人访问到, 但是访问地址后缀是.github.io, 所以为了特别点还是要花点钱<br>通过学习他人的文章或者视频, 搭建博客以及绑定域名等都不是问题. 同时, 配置一些基础的功能,例如统计文章字数, 记录文章浏览人数, 网站建站时常等, 这些都不需要什么编程的基础就能够很快实现, 同时有任何问题都可以通过关键字搜到解决办法.<br>但是为了更好的了解hexo这个开源项目, 我们还是需要深入学习html和css和js, 这样无论是更改css样式还是调整网页的布局都更高效.  </li>
+</ul>
+</li>
+</ol>
+<h3 id="如何调试样式？"><a href="#如何调试样式？" class="headerlink" title="如何调试样式？"></a>如何调试样式？</h3><hr>
+<p>hexo原始的框架基本已经提供了所有我们需要的样式, 我们需要做的就是在这个基础上设计我们自己喜欢的布局。我们可以通过快捷键 “fn+f12” 打开控制台, 这时我们能够看到控制台的工具栏有Elements, Console, Sources,…, Application这些标签页,在这里我们使用最多的就是Elements - 查看网页的HTML和CSS, 左边的呈现的是HTML结构, 右边是当前指定元素下的CSS样式, 这时我们能够通过修改这两个结构的值来直接观察网页的变化, 并且定位到我们想修改的地方(节省不少时间, 因为样式文件有很多)。</p>
+<h3 id="gt-gt-碰到的问题"><a href="#gt-gt-碰到的问题" class="headerlink" title=">> 碰到的问题"></a>&gt;&gt; 碰到的问题</h3><hr>
+<p>值得一提的是, 在调试blog的时候突然出现了一个错误:</p>
+<figure class="highlight js"><table><tbody><tr><td class="code"><pre><span class="line"><span class="comment">// Custom layer</span></span><br><span class="line">   <span class="comment">// ----------------------------------------------</span></span><br><span class="line">   <span class="keyword">for</span> $inject_style <span class="keyword">in</span> hexo-config(<span class="string">'injects.style'</span>)</span><br><span class="line">       @<span class="keyword">import</span> $inject_style;</span><br></pre></td></tr></tbody></table></figure>
+<p>然后整个网页变成没有样式的布局. 这个问题可以这样解决, 通过(<a href="https://blog.csdn.net/qq_52116176/article/details/109406842">https://blog.csdn.net/qq_52116176/article/details/109406842</a>): </p>
+<ol>
+<li>先在 “themes/next/source/css” 里面创建一个 “_custom” 文件夹, 然后在该文件夹里面创建”style.styl” (这个文件的目的是让用户自己自定义一些样式, 在这里面的样式的优先级最高), 并且添加以下代码:<figure class="highlight css"><table><tbody><tr><td class="code"><pre><span class="line"><span class="selector-tag">body</span> { </span><br><span class="line">    <span class="attribute">background</span>: <span class="built_in">url</span>(/images/greek-vase.png);</span><br><span class="line">    background-repeat: repeat;// 设定背景图片重复填充</span><br><span class="line">    <span class="selector-tag">background-attachment</span>: <span class="selector-tag">fixed</span>;// 设置背景图片不随页面滚动</span><br><span class="line">    <span class="selector-tag">background-position</span>: ; // 设置背景图片位置为默认值</span><br><span class="line">    <span class="selector-tag">background-size</span>: <span class="selector-tag">cover</span> // 此时会保持图像的纵横比并将图像缩放成将完全覆盖背景定位区域的最小大小。</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure></li>
+<li>然后修改在 “themes/source/css/main.styl” 路径下的 “main.styl” 就能够更换blog的背景了, 并且网页也恢复了正常显示. <figure class="highlight js"><table><tbody><tr><td class="code"><pre><span class="line"><span class="comment">// Custom Layer</span></span><br><span class="line"><span class="comment">// --------------------------------------------------</span></span><br><span class="line"><span class="keyword">for</span> $inject_style <span class="keyword">in</span> hexo-config(<span class="string">'injects.style'</span>)</span><br><span class="line">    <span class="comment">// @import $inject_style;</span></span><br><span class="line">    @<span class="keyword">import</span> <span class="string">"_custom/style.styl"</span>;</span><br></pre></td></tr></tbody></table></figure>
+
+
+</li>
+</ol>
+<h3 id="个人建议"><a href="#个人建议" class="headerlink" title="个人建议"></a>个人建议</h3><hr>
+<ul>
+<li>Blog搭建很快, 毕竟不太需要什么基础, 而样式的设计&amp;布局则需要花时间去学习 ‘HTML, CSS, JS’。</li>
+</ul>
+<h3 id="参考-amp-感谢"><a href="#参考-amp-感谢" class="headerlink" title="参考&amp;感谢"></a>参考&amp;感谢</h3><hr>
+<ol>
+<li><a href="https://zhuanlan.zhihu.com/p/28128674">hexo的next主题个性化教程:打造炫酷网站</a></li>
+<li><a href="https://thief.one/2017/03/03/Hexo%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E6%95%99%E7%A8%8B/">Hexo搭建博客教程</a></li>
+<li><a href="https://zhuanlan.zhihu.com/p/26625249?utm_source=qq&amp;utm_medium=social">GitHub+Hexo 搭建个人网站详细教程</a></li>
+<li><a href="https://jmyblog.top/">谁把钱丢了</a></li>
+</ol>
+]]></content>
+      <categories>
+        <category>HEXO</category>
+      </categories>
+      <tags>
+        <tag>HEXO</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>JAVA-Thread</title>
     <url>/2021/03/15/java_thread/</url>
     <content><![CDATA[<p><strong></strong></p><center><strong>进程，线程，同步，锁，池</strong></center><p></p>
@@ -725,75 +797,33 @@ public class Temp implements Inf {
       </tags>
   </entry>
   <entry>
-    <title>搭建博客</title>
-    <url>/2021/01/22/my-new-post/</url>
-    <content><![CDATA[<h3 id="为什么要搭Blog？"><a href="#为什么要搭Blog？" class="headerlink" title="为什么要搭Blog？"></a>为什么要搭Blog？</h3><hr>
-<p>其实这个想法一直都有, 只是总有别的事或者懒。现在为了更好的对自己学过的东西进行总结, 因此建了个博客把一些学习笔记详细并系统的记录下来, 这样也方便了自己学习和回顾。趁现在放假花了点时间把Blog搭起来了, 使用了框架Hexo+主题Next-Gemini, 先放到了Github的仓库然后为了个性化而绑定一个自己喜欢的域名。</p>
-<h3 id="背景知识"><a href="#背景知识" class="headerlink" title="背景知识"></a>背景知识</h3><hr>
-<p>使用开源项目博客框架Hexo搭建了个人博客在mac系统上, 主题是Next-Gemini。</p>
+    <title>Socket - Server&amp;Client</title>
+    <url>/2021/03/12/python_socket/</url>
+    <content><![CDATA[<h3 id="基本流程"><a href="#基本流程" class="headerlink" title="基本流程"></a>基本流程</h3><hr>
 <ol>
-<li><strong>Hexo下载初始化后包含的文件</strong>:<ul>
-<li>_config.yml : 总体配置文件, 又被称为”站级配置文件”, 作用于整个blog站点</li>
-<li>source : md源文件目录, 该文件夹存放了一些子目录文件夹, 例如_posts, about, categories等<ul>
-<li>_posts : 存放blog文章, 文章基本都是由markdown语法来编写</li>
-<li>categories : 存放分类, 例如文章的种类</li>
-</ul>
-</li>
-<li>themes : 存放blog的主题, 例如本文使用的next<ul>
-<li>默认主题是landscape</li>
-<li>next 该主题包含以下文件:<ul>
-<li>_config.yml : 主题配置文件</li>
-<li>layout 构造html的模版</li>
-<li>source 静态资源目录, css &amp; js</li>
-</ul>
-</li>
-</ul>
-</li>
-<li>public : 存放html, css, js等文件</li>
-<li>scaffolds : 存放了一些模版, 例如新建blog文章</li>
-<li>node_modules : NodeJs 所依赖的包, 后期可添加插件</li>
-<li>package-look.json : 支持NodeJs的包<br>Hexo最基本的功能是把markdown程序先翻译成JSON格式(JavaScript Object Notation)然后再生成html文件</li>
-</ul>
-</li>
-<li><strong>Hexo一些常用的命令</strong><ul>
-<li>hexo new page “ “ - 定义新文章 </li>
-<li>hexo clean  - 清除缓存文件(db.json) 和 已生成的静态文件(public)</li>
-<li>hexo generate - 预先生成静态文件, 例如html</li>
-<li>hexo server - 在本地启动服务器, 将生成的html网页部署到本地服务器</li>
-<li>hexo deploy - 部署网站, 将生成的html网页代码推送到github<br>常用的缩写 “hexo clean &amp;&amp; hexo g &amp;&amp; hexo s” 适用于调试网页时在本地(localhost:4000)查看网页效果, 而 “hexo clean &amp;&amp; hexo g &amp;&amp; hexo d” 是部署到所有人都可以访问的网站上(本文购买了Namecheap的域名). 其实不购买域名也可以, 放到github上也能够被所有人访问到, 但是访问地址后缀是.github.io, 所以为了特别点还是要花点钱<br>通过学习他人的文章或者视频, 搭建博客以及绑定域名等都不是问题. 同时, 配置一些基础的功能,例如统计文章字数, 记录文章浏览人数, 网站建站时常等, 这些都不需要什么编程的基础就能够很快实现, 同时有任何问题都可以通过关键字搜到解决办法.<br>但是为了更好的了解hexo这个开源项目, 我们还是需要深入学习html和css和js, 这样无论是更改css样式还是调整网页的布局都更高效.  </li>
-</ul>
-</li>
-</ol>
-<h3 id="如何调试样式？"><a href="#如何调试样式？" class="headerlink" title="如何调试样式？"></a>如何调试样式？</h3><hr>
-<p>hexo原始的框架基本已经提供了所有我们需要的样式, 我们需要做的就是在这个基础上设计我们自己喜欢的布局。我们可以通过快捷键 “fn+f12” 打开控制台, 这时我们能够看到控制台的工具栏有Elements, Console, Sources,…, Application这些标签页,在这里我们使用最多的就是Elements - 查看网页的HTML和CSS, 左边的呈现的是HTML结构, 右边是当前指定元素下的CSS样式, 这时我们能够通过修改这两个结构的值来直接观察网页的变化, 并且定位到我们想修改的地方(节省不少时间, 因为样式文件有很多)。</p>
-<h3 id="gt-gt-碰到的问题"><a href="#gt-gt-碰到的问题" class="headerlink" title=">> 碰到的问题"></a>&gt;&gt; 碰到的问题</h3><hr>
-<p>值得一提的是, 在调试blog的时候突然出现了一个错误:</p>
-<figure class="highlight js"><table><tbody><tr><td class="code"><pre><span class="line"><span class="comment">// Custom layer</span></span><br><span class="line">   <span class="comment">// ----------------------------------------------</span></span><br><span class="line">   <span class="keyword">for</span> $inject_style <span class="keyword">in</span> hexo-config(<span class="string">'injects.style'</span>)</span><br><span class="line">       @<span class="keyword">import</span> $inject_style;</span><br></pre></td></tr></tbody></table></figure>
-<p>然后整个网页变成没有样式的布局. 这个问题可以这样解决, 通过(<a href="https://blog.csdn.net/qq_52116176/article/details/109406842">https://blog.csdn.net/qq_52116176/article/details/109406842</a>): </p>
-<ol>
-<li>先在 “themes/next/source/css” 里面创建一个 “_custom” 文件夹, 然后在该文件夹里面创建”style.styl” (这个文件的目的是让用户自己自定义一些样式, 在这里面的样式的优先级最高), 并且添加以下代码:<figure class="highlight css"><table><tbody><tr><td class="code"><pre><span class="line"><span class="selector-tag">body</span> { </span><br><span class="line">    <span class="attribute">background</span>: <span class="built_in">url</span>(/images/greek-vase.png);</span><br><span class="line">    background-repeat: repeat;// 设定背景图片重复填充</span><br><span class="line">    <span class="selector-tag">background-attachment</span>: <span class="selector-tag">fixed</span>;// 设置背景图片不随页面滚动</span><br><span class="line">    <span class="selector-tag">background-position</span>: ; // 设置背景图片位置为默认值</span><br><span class="line">    <span class="selector-tag">background-size</span>: <span class="selector-tag">cover</span> // 此时会保持图像的纵横比并将图像缩放成将完全覆盖背景定位区域的最小大小。</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure></li>
-<li>然后修改在 “themes/source/css/main.styl” 路径下的 “main.styl” 就能够更换blog的背景了, 并且网页也恢复了正常显示. <figure class="highlight js"><table><tbody><tr><td class="code"><pre><span class="line"><span class="comment">// Custom Layer</span></span><br><span class="line"><span class="comment">// --------------------------------------------------</span></span><br><span class="line"><span class="keyword">for</span> $inject_style <span class="keyword">in</span> hexo-config(<span class="string">'injects.style'</span>)</span><br><span class="line">    <span class="comment">// @import $inject_style;</span></span><br><span class="line">    @<span class="keyword">import</span> <span class="string">"_custom/style.styl"</span>;</span><br></pre></td></tr></tbody></table></figure>
-
-
-</li>
-</ol>
-<h3 id="个人建议"><a href="#个人建议" class="headerlink" title="个人建议"></a>个人建议</h3><hr>
+<li><p>服务器端</p>
 <ul>
-<li>Blog搭建很快, 毕竟不太需要什么基础, 而样式的设计&amp;布局则需要花时间去学习 ‘HTML, CSS, JS’。</li>
+<li>socket() - 内核创建一个socket<figure class="highlight java"><table><tbody><tr><td class="code"><pre><span class="line">socket.socket(socket.AF_INET, socket.SOCK_STREAM)</span><br></pre></td></tr></tbody></table></figure></li>
+<li>bind() - 把一个本地协议地址(127.0.0.1)和套接口(用户设定)绑定, 因为服务端需要绑定一个端口让客户端知道服务器使用的是哪个端口.<figure class="highlight java"><table><tbody><tr><td class="code"><pre><span class="line">self.serverSocket.bind((self.serverAddress, self.serverPort))</span><br></pre></td></tr></tbody></table></figure></li>
+<li>listen() - 监听, 当socket创建后, 它被默认为是主动套接口, 默认为马上要调用connect函数, 但是作为服务器是需要被动接受的, 内核将在该套接口接收来自client的请求. 多个请求时需要在缓冲区排队, 缓冲区即请求队列为10.<figure class="highlight java"><table><tbody><tr><td class="code"><pre><span class="line">self.serverSocket.listen(<span class="number">10</span>)</span><br></pre></td></tr></tbody></table></figure></li>
+<li>accept() - 从队列中获得一个客户端的连接请求, 此函数返回已经握手完成的连接的套接口, 此处的套接口不同于服务器开始创建的监听套接口, 此套接口是已经完成连接的套接口, 监听套接口只是用来监听.<br>注意: listen() 只是让套接字处于监听状态, 并没有接收请求. 接收请求需要使用 accept() 函数。<figure class="highlight java"><table><tbody><tr><td class="code"><pre><span class="line">self.serverSocket.accept()</span><br></pre></td></tr></tbody></table></figure>
+accept() <strong>返回一个新的套接字</strong>来和客户端通信, addr 保存了客户端的IP地址和端口号, 而 sock 是服务器端新的套接字.</li>
 </ul>
-<h3 id="参考-amp-感谢"><a href="#参考-amp-感谢" class="headerlink" title="参考&amp;感谢"></a>参考&amp;感谢</h3><hr>
-<ol>
-<li><a href="https://zhuanlan.zhihu.com/p/28128674">hexo的next主题个性化教程:打造炫酷网站</a></li>
-<li><a href="https://thief.one/2017/03/03/Hexo%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E6%95%99%E7%A8%8B/">Hexo搭建博客教程</a></li>
-<li><a href="https://zhuanlan.zhihu.com/p/26625249?utm_source=qq&amp;utm_medium=social">GitHub+Hexo 搭建个人网站详细教程</a></li>
-<li><a href="https://jmyblog.top/">谁把钱丢了</a></li>
+</li>
+<li><p>客户端</p>
+<ul>
+<li>socket() - 内核创建一个socket<figure class="highlight java"><table><tbody><tr><td class="code"><pre><span class="line">socket.socket(socket.AF_INET, socket.SOCK_STREAM)</span><br></pre></td></tr></tbody></table></figure></li>
+<li>connect() - 客户端建立socket后, 需要用connect函数和服务端进行连接<figure class="highlight java"><table><tbody><tr><td class="code"><pre><span class="line">self.clientSocket.connect((self.serverIp, self.serverPort))</span><br></pre></td></tr></tbody></table></figure>
+完成1,2步即完成了三次握手, TCP连接建立.</li>
+</ul>
+</li>
 </ol>
 ]]></content>
       <categories>
-        <category>HEXO</category>
+        <category>socket</category>
       </categories>
       <tags>
-        <tag>HEXO</tag>
+        <tag>socket</tag>
       </tags>
   </entry>
   <entry>
@@ -877,36 +907,6 @@ public class Temp implements Inf {
       </categories>
       <tags>
         <tag>Network</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Socket - Server&amp;Client</title>
-    <url>/2021/03/12/python_socket/</url>
-    <content><![CDATA[<h3 id="基本流程"><a href="#基本流程" class="headerlink" title="基本流程"></a>基本流程</h3><hr>
-<ol>
-<li><p>服务器端</p>
-<ul>
-<li>socket() - 内核创建一个socket<figure class="highlight java"><table><tbody><tr><td class="code"><pre><span class="line">socket.socket(socket.AF_INET, socket.SOCK_STREAM)</span><br></pre></td></tr></tbody></table></figure></li>
-<li>bind() - 把一个本地协议地址(127.0.0.1)和套接口(用户设定)绑定, 因为服务端需要绑定一个端口让客户端知道服务器使用的是哪个端口.<figure class="highlight java"><table><tbody><tr><td class="code"><pre><span class="line">self.serverSocket.bind((self.serverAddress, self.serverPort))</span><br></pre></td></tr></tbody></table></figure></li>
-<li>listen() - 监听, 当socket创建后, 它被默认为是主动套接口, 默认为马上要调用connect函数, 但是作为服务器是需要被动接受的, 内核将在该套接口接收来自client的请求. 多个请求时需要在缓冲区排队, 缓冲区即请求队列为10.<figure class="highlight java"><table><tbody><tr><td class="code"><pre><span class="line">self.serverSocket.listen(<span class="number">10</span>)</span><br></pre></td></tr></tbody></table></figure></li>
-<li>accept() - 从队列中获得一个客户端的连接请求, 此函数返回已经握手完成的连接的套接口, 此处的套接口不同于服务器开始创建的监听套接口, 此套接口是已经完成连接的套接口, 监听套接口只是用来监听.<br>注意: listen() 只是让套接字处于监听状态, 并没有接收请求. 接收请求需要使用 accept() 函数。<figure class="highlight java"><table><tbody><tr><td class="code"><pre><span class="line">self.serverSocket.accept()</span><br></pre></td></tr></tbody></table></figure>
-accept() <strong>返回一个新的套接字</strong>来和客户端通信, addr 保存了客户端的IP地址和端口号, 而 sock 是服务器端新的套接字.</li>
-</ul>
-</li>
-<li><p>客户端</p>
-<ul>
-<li>socket() - 内核创建一个socket<figure class="highlight java"><table><tbody><tr><td class="code"><pre><span class="line">socket.socket(socket.AF_INET, socket.SOCK_STREAM)</span><br></pre></td></tr></tbody></table></figure></li>
-<li>connect() - 客户端建立socket后, 需要用connect函数和服务端进行连接<figure class="highlight java"><table><tbody><tr><td class="code"><pre><span class="line">self.clientSocket.connect((self.serverIp, self.serverPort))</span><br></pre></td></tr></tbody></table></figure>
-完成1,2步即完成了三次握手, TCP连接建立.</li>
-</ul>
-</li>
-</ol>
-]]></content>
-      <categories>
-        <category>socket</category>
-      </categories>
-      <tags>
-        <tag>socket</tag>
       </tags>
   </entry>
 </search>
