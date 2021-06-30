@@ -2,112 +2,112 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://gougeblog.com/2021/01/22/my-new-post/</loc>
+    <loc>https://gougeblog.com/2021/01/22/my-new-post/</loc>
     
     <lastmod>2021-06-30</lastmod>
     
   </url>
   
   <url>
-    <loc>http://gougeblog.com/2021/01/30/java_oop/</loc>
+    <loc>https://gougeblog.com/2021/01/30/java_oop/</loc>
     
     <lastmod>2021-06-30</lastmod>
     
   </url>
   
   <url>
-    <loc>http://gougeblog.com/2021/03/01/SpringBoot-helloworld/</loc>
+    <loc>https://gougeblog.com/2021/03/01/SpringBoot-helloworld/</loc>
     
     <lastmod>2021-06-30</lastmod>
     
   </url>
   
   <url>
-    <loc>http://gougeblog.com/2021/03/05/SpringBoot-new-web/</loc>
+    <loc>https://gougeblog.com/2021/03/05/SpringBoot-new-web/</loc>
     
     <lastmod>2021-06-30</lastmod>
     
   </url>
   
   <url>
-    <loc>http://gougeblog.com/2021/03/07/Git/</loc>
+    <loc>https://gougeblog.com/2021/03/07/Git/</loc>
     
     <lastmod>2021-06-30</lastmod>
     
   </url>
   
   <url>
-    <loc>http://gougeblog.com/2021/03/10/java_error_exception/</loc>
+    <loc>https://gougeblog.com/2021/03/10/java_error_exception/</loc>
     
     <lastmod>2021-06-30</lastmod>
     
   </url>
   
   <url>
-    <loc>http://gougeblog.com/2021/03/13/Sorted%20Algorithm/</loc>
+    <loc>https://gougeblog.com/2021/03/13/Sorted%20Algorithm/</loc>
     
     <lastmod>2021-06-30</lastmod>
     
   </url>
   
   <url>
-    <loc>http://gougeblog.com/2021/03/21/Linux/</loc>
+    <loc>https://gougeblog.com/2021/03/21/Linux/</loc>
     
     <lastmod>2021-06-30</lastmod>
     
   </url>
   
   <url>
-    <loc>http://gougeblog.com/2021/03/20/Mysql/</loc>
+    <loc>https://gougeblog.com/2021/03/20/Mysql/</loc>
     
     <lastmod>2021-06-30</lastmod>
     
   </url>
   
   <url>
-    <loc>http://gougeblog.com/2021/03/12/python_socket/</loc>
+    <loc>https://gougeblog.com/2021/03/12/python_socket/</loc>
     
     <lastmod>2021-06-30</lastmod>
     
   </url>
   
   <url>
-    <loc>http://gougeblog.com/2021/01/30/note-network-1/</loc>
+    <loc>https://gougeblog.com/2021/01/30/note-network-1/</loc>
     
     <lastmod>2021-06-30</lastmod>
     
   </url>
   
   <url>
-    <loc>http://gougeblog.com/2021/03/05/java_IO/</loc>
+    <loc>https://gougeblog.com/2021/03/05/java_IO/</loc>
     
     <lastmod>2021-06-30</lastmod>
     
   </url>
   
   <url>
-    <loc>http://gougeblog.com/2021/03/15/java_thread/</loc>
+    <loc>https://gougeblog.com/2021/03/15/java_thread/</loc>
     
     <lastmod>2021-06-30</lastmod>
     
   </url>
   
   <url>
-    <loc>http://gougeblog.com/about/index.html</loc>
+    <loc>https://gougeblog.com/about/index.html</loc>
     
     <lastmod>2021-06-30</lastmod>
     
   </url>
   
   <url>
-    <loc>http://gougeblog.com/categories/index.html</loc>
+    <loc>https://gougeblog.com/categories/index.html</loc>
     
     <lastmod>2021-01-29</lastmod>
     
   </url>
   
   <url>
-    <loc>http://gougeblog.com/tags/index.html</loc>
+    <loc>https://gougeblog.com/tags/index.html</loc>
     
     <lastmod>2021-01-29</lastmod>
     
@@ -115,7 +115,7 @@
   
 
   <url>
-    <loc>http://gougeblog.com/</loc>
+    <loc>https://gougeblog.com/</loc>
     <lastmod>2021-06-30</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
@@ -123,63 +123,63 @@
 
   
   <url>
-    <loc>http://gougeblog.com/tags/Git/</loc>
+    <loc>https://gougeblog.com/tags/Git/</loc>
     <lastmod>2021-06-30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>http://gougeblog.com/tags/Linux/</loc>
+    <loc>https://gougeblog.com/tags/Linux/</loc>
     <lastmod>2021-06-30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>http://gougeblog.com/tags/MySQL/</loc>
+    <loc>https://gougeblog.com/tags/MySQL/</loc>
     <lastmod>2021-06-30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>http://gougeblog.com/tags/Sorted/</loc>
+    <loc>https://gougeblog.com/tags/Sorted/</loc>
     <lastmod>2021-06-30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>http://gougeblog.com/tags/SpringBoot/</loc>
+    <loc>https://gougeblog.com/tags/SpringBoot/</loc>
     <lastmod>2021-06-30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>http://gougeblog.com/tags/JAVA/</loc>
+    <loc>https://gougeblog.com/tags/JAVA/</loc>
     <lastmod>2021-06-30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>http://gougeblog.com/tags/HEXO/</loc>
+    <loc>https://gougeblog.com/tags/HEXO/</loc>
     <lastmod>2021-06-30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>http://gougeblog.com/tags/Network/</loc>
+    <loc>https://gougeblog.com/tags/Network/</loc>
     <lastmod>2021-06-30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>http://gougeblog.com/tags/socket/</loc>
+    <loc>https://gougeblog.com/tags/socket/</loc>
     <lastmod>2021-06-30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -188,63 +188,63 @@
 
   
   <url>
-    <loc>http://gougeblog.com/categories/Git/</loc>
+    <loc>https://gougeblog.com/categories/Git/</loc>
     <lastmod>2021-06-30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>http://gougeblog.com/categories/Linux/</loc>
+    <loc>https://gougeblog.com/categories/Linux/</loc>
     <lastmod>2021-06-30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>http://gougeblog.com/categories/MySQL/</loc>
+    <loc>https://gougeblog.com/categories/MySQL/</loc>
     <lastmod>2021-06-30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>http://gougeblog.com/categories/Sorted/</loc>
+    <loc>https://gougeblog.com/categories/Sorted/</loc>
     <lastmod>2021-06-30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>http://gougeblog.com/categories/SpringBoot/</loc>
+    <loc>https://gougeblog.com/categories/SpringBoot/</loc>
     <lastmod>2021-06-30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>http://gougeblog.com/categories/JAVA/</loc>
+    <loc>https://gougeblog.com/categories/JAVA/</loc>
     <lastmod>2021-06-30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>http://gougeblog.com/categories/HEXO/</loc>
+    <loc>https://gougeblog.com/categories/HEXO/</loc>
     <lastmod>2021-06-30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>http://gougeblog.com/categories/Network/</loc>
+    <loc>https://gougeblog.com/categories/Network/</loc>
     <lastmod>2021-06-30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>http://gougeblog.com/categories/socket/</loc>
+    <loc>https://gougeblog.com/categories/socket/</loc>
     <lastmod>2021-06-30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>

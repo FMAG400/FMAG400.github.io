@@ -3,11 +3,11 @@
   <title>做些有趣的事</title>
   
   <subtitle>Homo</subtitle>
-  <link href="http://gougeblog.com/atom.xml" rel="self"/>
+  <link href="https://gougeblog.com/atom.xml" rel="self"/>
   
-  <link href="http://gougeblog.com/"/>
+  <link href="https://gougeblog.com/"/>
   <updated>2021-06-30T11:05:12.800Z</updated>
-  <id>http://gougeblog.com/</id>
+  <id>https://gougeblog.com/</id>
   
   <author>
     <name>GouGe</name>
@@ -18,8 +18,8 @@
   
   <entry>
     <title>Linux</title>
-    <link href="http://gougeblog.com/2021/03/21/Linux/"/>
-    <id>http://gougeblog.com/2021/03/21/Linux/</id>
+    <link href="https://gougeblog.com/2021/03/21/Linux/"/>
+    <id>https://gougeblog.com/2021/03/21/Linux/</id>
     <published>2021-03-21T02:20:25.000Z</published>
     <updated>2021-06-30T11:05:12.800Z</updated>
     
@@ -30,17 +30,17 @@
     
     
     
-    <category term="Linux" scheme="http://gougeblog.com/categories/Linux/"/>
+    <category term="Linux" scheme="https://gougeblog.com/categories/Linux/"/>
     
     
-    <category term="Linux" scheme="http://gougeblog.com/tags/Linux/"/>
+    <category term="Linux" scheme="https://gougeblog.com/tags/Linux/"/>
     
   </entry>
   
   <entry>
     <title>MySQL</title>
-    <link href="http://gougeblog.com/2021/03/20/Mysql/"/>
-    <id>http://gougeblog.com/2021/03/20/Mysql/</id>
+    <link href="https://gougeblog.com/2021/03/20/Mysql/"/>
+    <id>https://gougeblog.com/2021/03/20/Mysql/</id>
     <published>2021-03-20T02:20:25.000Z</published>
     <updated>2021-06-30T11:04:19.972Z</updated>
     
@@ -51,17 +51,17 @@
     
     
     
-    <category term="MySQL" scheme="http://gougeblog.com/categories/MySQL/"/>
+    <category term="MySQL" scheme="https://gougeblog.com/categories/MySQL/"/>
     
     
-    <category term="MySQL" scheme="http://gougeblog.com/tags/MySQL/"/>
+    <category term="MySQL" scheme="https://gougeblog.com/tags/MySQL/"/>
     
   </entry>
   
   <entry>
     <title>JAVA-Thread</title>
-    <link href="http://gougeblog.com/2021/03/15/java_thread/"/>
-    <id>http://gougeblog.com/2021/03/15/java_thread/</id>
+    <link href="https://gougeblog.com/2021/03/15/java_thread/"/>
+    <id>https://gougeblog.com/2021/03/15/java_thread/</id>
     <published>2021-03-15T02:00:10.000Z</published>
     <updated>2021-06-30T10:48:45.343Z</updated>
     
@@ -72,17 +72,17 @@
     
     
     
-    <category term="JAVA" scheme="http://gougeblog.com/categories/JAVA/"/>
+    <category term="JAVA" scheme="https://gougeblog.com/categories/JAVA/"/>
     
     
-    <category term="JAVA" scheme="http://gougeblog.com/tags/JAVA/"/>
+    <category term="JAVA" scheme="https://gougeblog.com/tags/JAVA/"/>
     
   </entry>
   
   <entry>
     <title>Sorted Algorithms</title>
-    <link href="http://gougeblog.com/2021/03/13/Sorted%20Algorithm/"/>
-    <id>http://gougeblog.com/2021/03/13/Sorted%20Algorithm/</id>
+    <link href="https://gougeblog.com/2021/03/13/Sorted%20Algorithm/"/>
+    <id>https://gougeblog.com/2021/03/13/Sorted%20Algorithm/</id>
     <published>2021-03-13T02:20:25.000Z</published>
     <updated>2021-06-30T11:08:21.555Z</updated>
     
@@ -93,17 +93,17 @@
     
     
     
-    <category term="Sorted" scheme="http://gougeblog.com/categories/Sorted/"/>
+    <category term="Sorted" scheme="https://gougeblog.com/categories/Sorted/"/>
     
     
-    <category term="Sorted" scheme="http://gougeblog.com/tags/Sorted/"/>
+    <category term="Sorted" scheme="https://gougeblog.com/tags/Sorted/"/>
     
   </entry>
   
   <entry>
     <title>Socket - Server&amp;Client</title>
-    <link href="http://gougeblog.com/2021/03/12/python_socket/"/>
-    <id>http://gougeblog.com/2021/03/12/python_socket/</id>
+    <link href="https://gougeblog.com/2021/03/12/python_socket/"/>
+    <id>https://gougeblog.com/2021/03/12/python_socket/</id>
     <published>2021-03-11T14:20:25.000Z</published>
     <updated>2021-06-30T11:00:30.443Z</updated>
     
@@ -114,17 +114,17 @@
     
     
     
-    <category term="socket" scheme="http://gougeblog.com/categories/socket/"/>
+    <category term="socket" scheme="https://gougeblog.com/categories/socket/"/>
     
     
-    <category term="socket" scheme="http://gougeblog.com/tags/socket/"/>
+    <category term="socket" scheme="https://gougeblog.com/tags/socket/"/>
     
   </entry>
   
   <entry>
     <title>JAVA-Error&amp;Exception</title>
-    <link href="http://gougeblog.com/2021/03/10/java_error_exception/"/>
-    <id>http://gougeblog.com/2021/03/10/java_error_exception/</id>
+    <link href="https://gougeblog.com/2021/03/10/java_error_exception/"/>
+    <id>https://gougeblog.com/2021/03/10/java_error_exception/</id>
     <published>2021-03-10T04:30:58.000Z</published>
     <updated>2021-06-30T11:09:13.821Z</updated>
     
@@ -135,17 +135,17 @@
     
     
     
-    <category term="JAVA" scheme="http://gougeblog.com/categories/JAVA/"/>
+    <category term="JAVA" scheme="https://gougeblog.com/categories/JAVA/"/>
     
     
-    <category term="JAVA" scheme="http://gougeblog.com/tags/JAVA/"/>
+    <category term="JAVA" scheme="https://gougeblog.com/tags/JAVA/"/>
     
   </entry>
   
   <entry>
     <title>Git</title>
-    <link href="http://gougeblog.com/2021/03/07/Git/"/>
-    <id>http://gougeblog.com/2021/03/07/Git/</id>
+    <link href="https://gougeblog.com/2021/03/07/Git/"/>
+    <id>https://gougeblog.com/2021/03/07/Git/</id>
     <published>2021-03-07T10:09:00.000Z</published>
     <updated>2021-06-30T11:13:13.812Z</updated>
     
@@ -156,17 +156,17 @@
     
     
     
-    <category term="Git" scheme="http://gougeblog.com/categories/Git/"/>
+    <category term="Git" scheme="https://gougeblog.com/categories/Git/"/>
     
     
-    <category term="Git" scheme="http://gougeblog.com/tags/Git/"/>
+    <category term="Git" scheme="https://gougeblog.com/tags/Git/"/>
     
   </entry>
   
   <entry>
     <title>JAVA-IO</title>
-    <link href="http://gougeblog.com/2021/03/05/java_IO/"/>
-    <id>http://gougeblog.com/2021/03/05/java_IO/</id>
+    <link href="https://gougeblog.com/2021/03/05/java_IO/"/>
+    <id>https://gougeblog.com/2021/03/05/java_IO/</id>
     <published>2021-03-05T08:30:10.000Z</published>
     <updated>2021-06-30T10:48:57.405Z</updated>
     
@@ -177,17 +177,17 @@
     
     
     
-    <category term="JAVA" scheme="http://gougeblog.com/categories/JAVA/"/>
+    <category term="JAVA" scheme="https://gougeblog.com/categories/JAVA/"/>
     
     
-    <category term="JAVA" scheme="http://gougeblog.com/tags/JAVA/"/>
+    <category term="JAVA" scheme="https://gougeblog.com/tags/JAVA/"/>
     
   </entry>
   
   <entry>
     <title>SpringBoot_new_web</title>
-    <link href="http://gougeblog.com/2021/03/05/SpringBoot-new-web/"/>
-    <id>http://gougeblog.com/2021/03/05/SpringBoot-new-web/</id>
+    <link href="https://gougeblog.com/2021/03/05/SpringBoot-new-web/"/>
+    <id>https://gougeblog.com/2021/03/05/SpringBoot-new-web/</id>
     <published>2021-03-04T15:08:52.000Z</published>
     <updated>2021-06-30T11:14:51.081Z</updated>
     
@@ -198,17 +198,17 @@
     
     
     
-    <category term="SpringBoot" scheme="http://gougeblog.com/categories/SpringBoot/"/>
+    <category term="SpringBoot" scheme="https://gougeblog.com/categories/SpringBoot/"/>
     
     
-    <category term="SpringBoot" scheme="http://gougeblog.com/tags/SpringBoot/"/>
+    <category term="SpringBoot" scheme="https://gougeblog.com/tags/SpringBoot/"/>
     
   </entry>
   
   <entry>
     <title>SpringBoot_helloworld</title>
-    <link href="http://gougeblog.com/2021/03/01/SpringBoot-helloworld/"/>
-    <id>http://gougeblog.com/2021/03/01/SpringBoot-helloworld/</id>
+    <link href="https://gougeblog.com/2021/03/01/SpringBoot-helloworld/"/>
+    <id>https://gougeblog.com/2021/03/01/SpringBoot-helloworld/</id>
     <published>2021-02-28T14:20:25.000Z</published>
     <updated>2021-06-30T11:18:59.093Z</updated>
     
@@ -219,17 +219,17 @@
     
     
     
-    <category term="SpringBoot" scheme="http://gougeblog.com/categories/SpringBoot/"/>
+    <category term="SpringBoot" scheme="https://gougeblog.com/categories/SpringBoot/"/>
     
     
-    <category term="SpringBoot" scheme="http://gougeblog.com/tags/SpringBoot/"/>
+    <category term="SpringBoot" scheme="https://gougeblog.com/tags/SpringBoot/"/>
     
   </entry>
   
   <entry>
     <title>JAVA-OOP</title>
-    <link href="http://gougeblog.com/2021/01/30/java_oop/"/>
-    <id>http://gougeblog.com/2021/01/30/java_oop/</id>
+    <link href="https://gougeblog.com/2021/01/30/java_oop/"/>
+    <id>https://gougeblog.com/2021/01/30/java_oop/</id>
     <published>2021-01-30T07:32:58.000Z</published>
     <updated>2021-06-30T11:21:19.353Z</updated>
     
@@ -240,17 +240,17 @@
     
     
     
-    <category term="JAVA" scheme="http://gougeblog.com/categories/JAVA/"/>
+    <category term="JAVA" scheme="https://gougeblog.com/categories/JAVA/"/>
     
     
-    <category term="JAVA" scheme="http://gougeblog.com/tags/JAVA/"/>
+    <category term="JAVA" scheme="https://gougeblog.com/tags/JAVA/"/>
     
   </entry>
   
   <entry>
     <title>计算机网络-Note_1</title>
-    <link href="http://gougeblog.com/2021/01/30/note-network-1/"/>
-    <id>http://gougeblog.com/2021/01/30/note-network-1/</id>
+    <link href="https://gougeblog.com/2021/01/30/note-network-1/"/>
+    <id>https://gougeblog.com/2021/01/30/note-network-1/</id>
     <published>2021-01-30T06:13:58.000Z</published>
     <updated>2021-06-30T10:49:22.674Z</updated>
     
@@ -261,17 +261,17 @@
     
     
     
-    <category term="Network" scheme="http://gougeblog.com/categories/Network/"/>
+    <category term="Network" scheme="https://gougeblog.com/categories/Network/"/>
     
     
-    <category term="Network" scheme="http://gougeblog.com/tags/Network/"/>
+    <category term="Network" scheme="https://gougeblog.com/tags/Network/"/>
     
   </entry>
   
   <entry>
     <title>搭建博客</title>
-    <link href="http://gougeblog.com/2021/01/22/my-new-post/"/>
-    <id>http://gougeblog.com/2021/01/22/my-new-post/</id>
+    <link href="https://gougeblog.com/2021/01/22/my-new-post/"/>
+    <id>https://gougeblog.com/2021/01/22/my-new-post/</id>
     <published>2021-01-21T16:22:36.000Z</published>
     <updated>2021-06-30T11:23:16.098Z</updated>
     
@@ -282,10 +282,10 @@
     
     
     
-    <category term="HEXO" scheme="http://gougeblog.com/categories/HEXO/"/>
+    <category term="HEXO" scheme="https://gougeblog.com/categories/HEXO/"/>
     
     
-    <category term="HEXO" scheme="http://gougeblog.com/tags/HEXO/"/>
+    <category term="HEXO" scheme="https://gougeblog.com/tags/HEXO/"/>
     
   </entry>
   
