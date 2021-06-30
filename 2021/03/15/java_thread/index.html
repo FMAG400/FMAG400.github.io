@@ -20,20 +20,20 @@
     var CONFIG = {"hostname":"gougeblog.com","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":true,"show_result":true,"style":"mac"},"back2top":{"enable":true,"sidebar":false,"scrollpercent":true},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
   </script>
 
-  <meta name="description" content="-记录JAVA的一些基础知识-">
+  <meta name="description" content="-多线程概念-">
 <meta property="og:type" content="article">
-<meta property="og:title" content="JAVA-Note_1">
-<meta property="og:url" content="http://gougeblog.com/2021/01/30/java_note_1/index.html">
-<meta property="og:site_name" content="六马狗窝">
-<meta property="og:description" content="-记录JAVA的一些基础知识-">
+<meta property="og:title" content="JAVA-Thread">
+<meta property="og:url" content="http://gougeblog.com/2021/03/15/java_thread/index.html">
+<meta property="og:site_name" content="做些有趣的事">
+<meta property="og:description" content="-多线程概念-">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2021-01-30T07:32:58.000Z">
-<meta property="article:modified_time" content="2021-01-31T12:04:49.882Z">
+<meta property="article:published_time" content="2021-03-15T02:00:10.000Z">
+<meta property="article:modified_time" content="2021-06-30T10:48:45.343Z">
 <meta property="article:author" content="GouGe">
 <meta property="article:tag" content="JAVA">
 <meta name="twitter:card" content="summary">
 
-<link rel="canonical" href="http://gougeblog.com/2021/01/30/java_note_1/">
+<link rel="canonical" href="http://gougeblog.com/2021/03/15/java_thread/">
 
 
 <script id="page-configurations">
@@ -46,7 +46,7 @@
   };
 </script>
 
-  <title>JAVA-Note_1 | 六马狗窝</title>
+  <title>JAVA-Thread | 做些有趣的事</title>
   
 
 
@@ -81,7 +81,7 @@
 
 
 <style>.github-emoji { position: relative; display: inline-block; width: 1.2em; min-height: 1.2em; overflow: hidden; vertical-align: top; color: transparent; }  .github-emoji > span { position: relative; z-index: 10; }  .github-emoji img, .github-emoji .fancybox { margin: 0 !important; padding: 0 !important; border: none !important; outline: none !important; text-decoration: none !important; user-select: none !important; cursor: auto !important; }  .github-emoji img { height: 1.2em !important; width: 1.2em !important; position: absolute !important; left: 50% !important; top: 50% !important; transform: translate(-50%, -50%) !important; user-select: none !important; cursor: auto !important; } .github-emoji-fallback { color: inherit; } .github-emoji-fallback img { opacity: 0 !important; }</style>
-<link rel="alternate" href="/atom.xml" title="六马狗窝" type="application/atom+xml">
+<link rel="alternate" href="/atom.xml" title="做些有趣的事" type="application/atom+xml">
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage">
@@ -112,10 +112,10 @@
 
     <a href="/" class="brand" rel="start">
       <span class="logo-line-before"><i></i></span>
-      <h1 class="site-title">六马狗窝</h1>
+      <h1 class="site-title">做些有趣的事</h1>
       <span class="logo-line-after"><i></i></span>
     </a>
-      <p class="site-subtitle" itemprop="description">GrownUp</p>
+      <p class="site-subtitle" itemprop="description">Homo</p>
   </div>
 
   
@@ -207,7 +207,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://gougeblog.com/2021/01/30/java_note_1/">
+    <link itemprop="mainEntityOfPage" href="http://gougeblog.com/2021/03/15/java_thread/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/head_img.gif">
@@ -216,11 +216,11 @@
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="六马狗窝">
+      <meta itemprop="name" content="做些有趣的事">
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          JAVA-Note_1
+          JAVA-Thread
         </h1>
 
         <div class="post-meta">
@@ -230,14 +230,14 @@
               </span>
               <span class="post-meta-item-text">发表于</span>
 
-              <time title="创建时间：2021-01-30 15:32:58" itemprop="dateCreated datePublished" datetime="2021-01-30T15:32:58+08:00">2021-01-30</time>
+              <time title="创建时间：2021-03-15 10:00:10" itemprop="dateCreated datePublished" datetime="2021-03-15T10:00:10+08:00">2021-03-15</time>
             </span>
               <span class="post-meta-item">
                 <span class="post-meta-item-icon">
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2021-01-31 20:04:49" itemprop="dateModified" datetime="2021-01-31T20:04:49+08:00">2021-01-31</time>
+                <time title="修改时间：2021-06-30 18:48:45" itemprop="dateModified" datetime="2021-06-30T18:48:45+08:00">2021-06-30</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -249,27 +249,15 @@
                 </span>
             </span>
   
-  <span class="post-meta-item">
-    
-      <span class="post-meta-item-icon">
-        <i class="far fa-comment"></i>
-      </span>
-      <span class="post-meta-item-text">评论数：</span>
-    
-    <a title="valine" href="/2021/01/30/java_note_1/#valine-comments" itemprop="discussionUrl">
-      <span class="post-comments-count valine-comment-count" data-xid="/2021/01/30/java_note_1/" itemprop="commentCount"></span>
-    </a>
-  </span>
-  
   <br>
             <span class="post-meta-item" title="本文字数">
               <span class="post-meta-item-icon">
                 <i class="far fa-file-word"></i>
               </span>
                 <span class="post-meta-item-text">本文字数：</span>
-              <span>1.1k</span>
+              <span>1.9k</span>
             </span>
-            <div class="post-description">-记录JAVA的一些基础知识-</div>
+            <div class="post-description">-多线程概念-</div>
 
         </div>
       </header>
@@ -280,61 +268,76 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <p><strong></strong></p><center><strong>面向对象 - 分工而治, 统一管理</strong></center><p></p>
-<h3 id="一-三大特性"><a href="#一-三大特性" class="headerlink" title="一.三大特性"></a>一.三大特性</h3><hr>
+        <p><strong></strong></p><center><strong>进程，线程，同步，锁，池</strong></center><p></p>
+<h3 id="线程简介"><a href="#线程简介" class="headerlink" title="线程简介"></a>线程简介</h3><hr>
 <ol>
-<li><strong>封装 Encapsulation</strong>   <ul>
-<li>类的信息隐藏与内部且不能被直接访问 - private </li>
-<li>可通过特定的方法实现隐藏信息的访问 - 设置get和set方法</li>
-</ul>
-</li>
+<li>在操作系统中运行的程序就是<strong>进程</strong>(系统资源分配的单位)，例微信，QQ，音乐播放器等，一个进程可以有多个线程，例视频中声音，图像和弹幕等</li>
+<li>线程是CPU调度和执行的单位</li>
 </ol>
-<ol start="2">
-<li><strong>继承 Inheritance</strong>   <ul>
-<li>类与类之间的关系 - 父类(基类) - 子类(派生), 子类继承父类所有属性和方法, 父类不能调用子类的东西。</li>
-<li>extends - 只能继承一个父类, <figure class="highlight java"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">son</span> <span class="keyword">extends</span> <span class="title">F</span> </span>{ }</span><br></pre></td></tr></tbody></table></figure></li>
-<li>子类不可继承构造方法(若要继承, 可使用super() - 表上一级&amp;父类, 置于子类构造方法内第一行)。</li>
-<li><strong>(1) 重写</strong><ul>
-<li>父类的成员方法只能被继承他的子类重写 <strong>“@override”</strong>。</li>
-<li>重写的成员方法无论是参数还是返回类型(也可设置为子类类型)都必须与被重写方法相同。</li>
-<li>子类中重写方法的访问权限应该 &gt;= 父类中被重写方法的权限, 访问修饰符 -&gt; **’public, protected, default, private’**，由左往右权限越来越低。</li>
-<li>final 和 static 本质不能被重写。</li>
-</ul>
-</li>
-<li><strong>(2) final</strong><ul>
-<li>置于类前则不能被继承, 方法前则不能被重写, 变量前则不能被改变, 赋值前代表构造函数或者构造代码块。</li>
-</ul>
-</li>
-</ul>
-</li>
-</ol>
-<ol start="3">
-<li><strong>多态 Professionaly</strong> <figure class="highlight java"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//调用重写方法, 但子类特有方法无法调用。</span></span><br><span class="line">Father object = <span class="keyword">new</span> Child() </span><br></pre></td></tr></tbody></table></figure>
+<h3 id="线程创建"><a href="#线程创建" class="headerlink" title="线程创建"></a>线程创建</h3><hr>
+<ol>
+<li><p><strong>继承Thread类</strong> </p>
 <ul>
-<li>先继承, 再重写, 后才有多态,  相同的事物, 调用其相同的方法且参数也相同时, 但表现的行为却不同。</li>
-<li>不同子类继承同一父类, 结果对同一方法的重写可以表现出不同的行为。</li>
+<li>重写run()方法，编写线程执行体</li>
+<li>创建线程对象，调用start()方法启动线程, </li>
+<li>等待CPU调度</li>
+<li>注意：线程开启不一定立即执行，由CPU调度执行</li>
+<li>子类继承Thread类具备多线程能力</li>
+<li>启动线程: 子类对象.start()<figure class="highlight java"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">package</span> com.Thread;</span><br><span class="line"></span><br><span class="line"><span class="comment">//创建线程方式一： 继承Thread类，重写run()方法，调用start()开启线程</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">TestThread01</span> <span class="keyword">extends</span> <span class="title">Thread</span></span>{</span><br><span class="line"></span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">run</span><span class="params">()</span> </span>{</span><br><span class="line">        <span class="comment">//run方法线程体</span></span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; <span class="number">1000</span>; i++) {</span><br><span class="line">            System.out.println(<span class="string">"---run---"</span> + i);</span><br><span class="line">        }</span><br><span class="line">    }</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>{</span><br><span class="line">        <span class="comment">//main线程，主线程</span></span><br><span class="line"></span><br><span class="line">        <span class="comment">//创建一个线程对象</span></span><br><span class="line">        TestThread01 testThread01 = <span class="keyword">new</span> TestThread01();</span><br><span class="line"></span><br><span class="line">        <span class="comment">//调用start()方法开启线程</span></span><br><span class="line">        testThread01.start(); <span class="comment">// 两个线程交替执行，主线程和子线程并行交替执行</span></span><br><span class="line">        <span class="comment">//testThread01.run(); // 只有主线程一条执行路径，先执行run()然后再输出下面的语句</span></span><br><span class="line"></span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; <span class="number">1000</span>; i++) {</span><br><span class="line">            System.out.println(<span class="string">"++main++"</span> + i);</span><br><span class="line">        }</span><br><span class="line">    }</span><br><span class="line">}</span><br><span class="line"></span><br></pre></td></tr></tbody></table></figure></li>
 </ul>
 </li>
-</ol>
-<h3 id="二-接口-interface"><a href="#二-接口-interface" class="headerlink" title="二.接口 interface"></a>二.接口 interface</h3><hr>
+<li><p><strong>实现Runnable接口</strong></p>
 <ul>
-<li><strong>定义了一个接口, 只包含方法和常量, 且方法仅声明不需要实现。</strong> <figure class="highlight java"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//接口</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">interface</span> <span class="title">Inf</span> </span>{ </span><br><span class="line">    <span class="keyword">void</span> fun1; </span><br><span class="line">    <span class="keyword">void</span> fun2 </span><br><span class="line">}</span><br><span class="line"><span class="comment">//实现类</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Temp</span> <span class="keyword">implements</span> <span class="title">Inf</span> </span>{ </span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">fun1</span><span class="params">()</span> </span>{</span><br><span class="line"></span><br><span class="line">    }</span><br><span class="line"></span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">fun2</span><span class="params">()</span> </span>{</span><br><span class="line"></span><br><span class="line">    }</span><br><span class="line">}</span><br><span class="line"><span class="comment">//实现类中必须实现所有接口定义的方法, 否则报错。</span></span><br><span class="line"><span class="comment">//main函数中继承实现类的时候应该 " = new 对应的接口" 而不是实现类本身。</span></span><br></pre></td></tr></tbody></table></figure>
+<li><p>定义类实现Runnable接口</p>
+</li>
+<li><p>重写run()方法，编写线程执行体</p>
+</li>
+<li><p>创建线程对象，调用start方法启动线程</p>
+</li>
+<li><p>实现接口Runnable具有多线程能力</p>
+</li>
+<li><p>启动线程: 传入目标对象+Thread对象.start()</p>
+</li>
+<li><p>优点: 可避免单继承局限性，灵活方便，方便同一个对象被多个线程使用</p>
+<figure class="highlight java"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">package</span> com.Thread;</span><br><span class="line"></span><br><span class="line"><span class="comment">//创建线程方式2： 实现runnable接口，重写run方法</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">MyRunnable</span> <span class="keyword">implements</span> <span class="title">Runnable</span></span>{</span><br><span class="line"></span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">run</span><span class="params">()</span> </span>{</span><br><span class="line">        <span class="comment">//run方法线程体</span></span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; <span class="number">1000</span>; i++) {</span><br><span class="line">            System.out.println(<span class="string">"--run--"</span> + i);</span><br><span class="line">        }</span><br><span class="line">    }</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>{</span><br><span class="line">        <span class="comment">//创建runnable接口的实现类对象</span></span><br><span class="line">        MyRunnable myRunnable = <span class="keyword">new</span> MyRunnable();</span><br><span class="line"></span><br><span class="line">        <span class="comment">//创建线程对象，通过线程对象来开启我们的线程, 代理</span></span><br><span class="line">        Thread thread = <span class="keyword">new</span> Thread(myRunnable);</span><br><span class="line">        thread.start();</span><br><span class="line"></span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; <span class="number">1000</span>; i++) {</span><br><span class="line">            System.out.println(<span class="string">"++main++"</span> + i);</span><br><span class="line">        }</span><br><span class="line">    }</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
 
 </li>
 </ul>
-<h3 id="三-抽象-abstract"><a href="#三-抽象-abstract" class="headerlink" title="三.抽象 abstract"></a>三.抽象 abstract</h3><hr>
-<ul>
-<li>abstract修饰的方法叫抽象方法, 其不能实例化。</li>
-<li>有抽象方法则该类一定是抽象类。</li>
-<li>继承父类的抽象类, 一定要实现所有的抽象方法。</li>
+</li>
+</ol>
+<h3 id="线程状态"><a href="#线程状态" class="headerlink" title="线程状态"></a>线程状态</h3><hr>
+<ol>
+<li><strong>创建</strong><ul>
+<li><strong>Thread t = new thread()</strong>, 创建线程对象</li>
 </ul>
-<hr>
+</li>
+<li><strong>就绪</strong><ul>
+<li>当调用start()方法，线程立即进入就绪状态，但不意味着立即运行</li>
+<li>当获得cpu资源时进入运行状态</li>
+</ul>
+</li>
+<li><strong>运行</strong><ul>
+<li>进入运行状态，线程才真正执行线程体的代码块</li>
+<li>当释放cpu资源时进入就绪状态</li>
+<li>用户输入线程休眠等进入阻塞状态</li>
+<li>线程自然执行完毕或者外部干涉终止线程则进入死亡状态</li>
+</ul>
+</li>
+<li><strong>阻塞</strong><ul>
+<li>调用sleep，wait或同步锁定，线程进入阻塞状态，此时代码不往下执行</li>
+<li>阻塞解除后重新进入就绪状态等待cpu调度</li>
+</ul>
+</li>
+<li><strong>死亡</strong><ul>
+<li>线程终端或者结束，一旦死亡不可再次启动</li>
+</ul>
+</li>
+</ol>
+<h3 id="Lamda表达式"><a href="#Lamda表达式" class="headerlink" title="Lamda表达式"></a>Lamda表达式</h3><hr>
 <ul>
-<li><strong>抽象类和接口的区别</strong>  <ul>
-<li>抽象类 - 可以不包含抽象方法。</li>
-<li>抽象类 - 被子类继承 ‘extends’, 接口要被子类 ‘implements’。</li>
-<li>接口支持多继承（一个类可以实现多个接口）, 但是类只能继承一个。</li>
-<li>事物本质 - 抽象类, 一种操作 - 接口</li>
+<li>函数式接口 Functional Interface<ul>
+<li>任何接口，如果只包含唯一一个抽象方法，那么它就是一个函数式接口<figure class="highlight java"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">interface</span> <span class="title">Runnable</span> </span>{</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">abstract</span> <span class="keyword">void</span> <span class="title">run</span><span class="params">()</span></span>;</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure></li>
+<li>对于函数是接口我们可以通过lambda表达式来创建该接口的对象</li>
 </ul>
 </li>
 </ul>
@@ -369,7 +372,7 @@
   </li>
   <li class="post-copyright-link">
     <strong>本文链接：</strong>
-    <a href="http://gougeblog.com/2021/01/30/java_note_1/" title="JAVA-Note_1">http://gougeblog.com/2021/01/30/java_note_1/</a>
+    <a href="http://gougeblog.com/2021/03/15/java_thread/" title="JAVA-Thread">http://gougeblog.com/2021/03/15/java_thread/</a>
   </li>
   <li class="post-copyright-license">
     <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="noopener" target="_blank"><i class="fab fa-fw fa-creative-commons"></i>BY-NC-SA</a> 许可协议。转载请注明出处！
@@ -389,12 +392,12 @@
         
     <div class="post-nav">
       <div class="post-nav-item">
-    <a href="/2021/01/30/note-network-1/" rel="prev" title="计算机网络-Note_1">
-      <i class="fa fa-chevron-left"></i> 计算机网络-Note_1
+    <a href="/2021/03/13/Sorted%20Algorithm/" rel="prev" title="Sorted Algorithms">
+      <i class="fa fa-chevron-left"></i> Sorted Algorithms
     </a></div>
       <div class="post-nav-item">
-    <a href="/2021/02/04/python-Note-1/" rel="next" title="Python-Note_1">
-      Python-Note_1 <i class="fa fa-chevron-right"></i>
+    <a href="/2021/03/20/Mysql/" rel="next" title="MySQL">
+      MySQL <i class="fa fa-chevron-right"></i>
     </a></div>
     </div>
       </footer>
@@ -408,7 +411,6 @@
 
           </div>
           
-    <div class="comments" id="valine-comments"></div>
 
 <script>
   window.addEventListener('tabs:register', () => {
@@ -455,7 +457,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%B8%80-%E4%B8%89%E5%A4%A7%E7%89%B9%E6%80%A7"><span class="nav-number">1.</span> <span class="nav-text">一.三大特性</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%BA%8C-%E6%8E%A5%E5%8F%A3-interface"><span class="nav-number">2.</span> <span class="nav-text">二.接口 interface</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%B8%89-%E6%8A%BD%E8%B1%A1-abstract"><span class="nav-number">3.</span> <span class="nav-text">三.抽象 abstract</span></a></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%BA%BF%E7%A8%8B%E7%AE%80%E4%BB%8B"><span class="nav-number">1.</span> <span class="nav-text">线程简介</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%BA%BF%E7%A8%8B%E5%88%9B%E5%BB%BA"><span class="nav-number">2.</span> <span class="nav-text">线程创建</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%BA%BF%E7%A8%8B%E7%8A%B6%E6%80%81"><span class="nav-number">3.</span> <span class="nav-text">线程状态</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Lamda%E8%A1%A8%E8%BE%BE%E5%BC%8F"><span class="nav-number">4.</span> <span class="nav-text">Lamda表达式</span></a></li></ol></div>
       </div>
       <!--/noindex-->
 
@@ -471,20 +473,20 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">5</span>
+          <span class="site-state-item-count">13</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
       <div class="site-state-item site-state-categories">
             <a href="/categories/">
           
-        <span class="site-state-item-count">5</span>
+        <span class="site-state-item-count">9</span>
         <span class="site-state-item-name">分类</span></a>
       </div>
       <div class="site-state-item site-state-tags">
             <a href="/tags/">
           
-        <span class="site-state-item-count">5</span>
+        <span class="site-state-item-count">9</span>
         <span class="site-state-item-name">标签</span></a>
       </div>
   </nav>
@@ -502,7 +504,7 @@
           <h3 class="widget-title">Tag Cloud</h3>
           <div id="myCanvasContainer" class="widget tagcloud">
               <canvas width="250" height="250" id="resCanvas" style="width:100%">
-                  <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/HEXO/" rel="tag">HEXO</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/JAVA/" rel="tag">JAVA</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Network/" rel="tag">Network</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Python/" rel="tag">Python</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/SpringBoot/" rel="tag">SpringBoot</a><span class="tag-list-count">1</span></li></ul>
+                  <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/Git/" rel="tag">Git</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/HEXO/" rel="tag">HEXO</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/JAVA/" rel="tag">JAVA</a><span class="tag-list-count">4</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Linux/" rel="tag">Linux</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/MySQL/" rel="tag">MySQL</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Network/" rel="tag">Network</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Sorted/" rel="tag">Sorted</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/SpringBoot/" rel="tag">SpringBoot</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/socket/" rel="tag">socket</a><span class="tag-list-count">1</span></li></ul>
               </canvas>
           </div>
       </div>
